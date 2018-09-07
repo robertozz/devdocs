@@ -1,16 +1,13 @@
----
----
-
 <!DOCTYPE html>
 <html lang=en>
 
 <head>
   <meta charset=utf-8>
 
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/common/css/stylesheet.css"/>
-  <link rel="stylesheet" href="{{ site.baseurl }}/common/css/stylesheet-fonts.css" type="text/css" charset="utf-8">
-  <link rel="icon" href="{{ site.baseurl }}/common/css/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="{{ site.baseurl }}/common/css/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="/common/css/stylesheet.css"/>
+  <link rel="stylesheet" href="/common/css/stylesheet-fonts.css" type="text/css" charset="utf-8">
+  <link rel="icon" href="/common/css/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/common/css/favicon.ico" type="image/x-icon">
   <title>Installing and Upgrading to Magento Community Edition (CE) and Magento Enterprise Edition (EE)</title>
 
 </head>
@@ -18,8 +15,17 @@
 <body>
 <a name="top"></a>
 
-<img src="{{ site.baseurl }}/common/images/m1x/m1xheader.png" width="1024" alt="header" />
-{% include m1x/eol_message.html %}
+<img src="/common/images/m1x/m1xheader.png" width="1024" alt="header" />
+<div class="message-banner">
+  <h4>Magento 1.x Software Support Notice</h4>
+  <p>
+    For Magento Commerce 1, Magento is providing software support through June 2020. Depending on your Magento Commerce 1 version, software support may include both quality fixes and security patches. Please review our <a href="https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf">Magento Software Lifecycle Policy</a> to see how your version of Magento Commerce 1 is supported.
+  </p>
+  <p>
+  	For Magento Open Source 1.5 to 1.9, Magento is providing software security patches through June 2020 to ensure those sites remain secure and compliant. Visit our <a href="https://info2.magento.com/M1OpenSource.html">information page</a> for more details about our software maintenance policy and other considerations for your business.
+  </p>
+</div>
+
 
 <div id="content">
 
@@ -35,8 +41,8 @@
 <li><a href="#overview">Overview</a></li>
 <li><a href="#help">Getting Help With Your Installation or Upgrade</li>
 <li><a href="#get">Getting Magento Software</a></li>
-<li><a href="{{ site.m1xgdeurl }}install/installing_install.html" target="_blank">Installing Magento CE or EE</a></li>
-<li><a href="{{ site.m1xgdeurl }}install/installing_upgrade_landing.html" target="_blank">Upgrading to Magento CE or EE</a></li>
+<li><a href="/guides/m1x/install/installing_install.html" target="_blank">Installing Magento CE or EE</a></li>
+<li><a href="/guides/m1x/install/installing_upgrade_landing.html" target="_blank">Upgrading to Magento CE or EE</a></li>
 </ul></div>
 
 <h2 id="overview">Overview</h2>
@@ -46,12 +52,12 @@
 <p>These releases include a number of improvements:</p>
 <ul><li><a href="http://www.magentocommerce.com/knowledge-base/entry/ce19-later-release-notes" target="_blank">Magento Community Edition (CE) Release Notes</a></li>
 <li><a href="http://www.magentocommerce.com/knowledge-base/entry/ee114-later-release-notes" target="_blank">Magento Enterprise Edition (EE) Release Notes</a></li>
-<li><a href="{{ site.m1xgdeurl }}ce19-ee114-home.html" target="_blank">Magento CE and EE documentation home page</a>, which also has information about new features</li></ul>
-<div class="msg-box important"><img src="{{ site.baseurl }}/common/images/m1x/icon-important.png" alt="important" align="left" width="40"><span><strong>Important</strong>: Use CE 1.9.1 or EE 1.14.1 or later for <em>all new EE installations and upgrades</em> to get the latest fixes, features, and security updates.</span></div>
+<li><a href="/guides/m1x/ce19-ee114-home.html" target="_blank">Magento CE and EE documentation home page</a>, which also has information about new features</li></ul>
+<div class="msg-box important"><img src="/common/images/m1x/icon-important.png" alt="important" align="left" width="40"><span><strong>Important</strong>: Use CE 1.9.1 or EE 1.14.1 or later for <em>all new EE installations and upgrades</em> to get the latest fixes, features, and security updates.</span></div>
 
 <p>The sections that follow get you started on your installation or upgrade. Detailed, step-by-step procedures are discussed in the following articles:</p>
-<ul><li><a href="{{ site.m1xgdeurl }}install/installing_install.html" target="_blank">Installing Magento CE or Magento EE</a></li>
-<li><a href="{{ site.m1xgdeurl }}install/installing_upgrade_landing.html" target="_blank">Upgrading to Magento CE or EE</a></li></ul>
+<ul><li><a href="/guides/m1x/install/installing_install.html" target="_blank">Installing Magento CE or Magento EE</a></li>
+<li><a href="/guides/m1x/install/installing_upgrade_landing.html" target="_blank">Upgrading to Magento CE or EE</a></li></ul>
 
 <h2 id="help">Getting Help With Your Installation or Upgrade</h3>
 <p>In the event you have a large, distributed system or you need additional help, consult the following resources.</p>
@@ -106,8 +112,8 @@
 </table>
 
 <h2 id="install">Installing Magento CE or EE</h2>
-<p>See <a href="{{ site.m1xgdeurl }}install/installing_install.html" target="_blank">Installing Magento CE or EE</a>.</p>
+<p>See <a href="/guides/m1x/install/installing_install.html" target="_blank">Installing Magento CE or EE</a>.</p>
 
 <h2 id="upgrade-manual">Upgrading to Magento CE or EE</h2>
-<p>See <a href="{{ site.m1xgdeurl }}install/installing_upgrade_landing.html" target="_blank">Upgrading to Magento CE or EE</a>.</p>
+<p>See <a href="/guides/m1x/install/installing_upgrade_landing.html" target="_blank">Upgrading to Magento CE or EE</a>.</p>
 

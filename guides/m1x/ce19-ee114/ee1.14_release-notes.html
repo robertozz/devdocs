@@ -1,14 +1,12 @@
----
----
 <!DOCTYPE html> 
 <html lang=en>
 <head>
 	<meta charset=utf-8>
 
-	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/common/css/stylesheet.css"/>
-	<link rel="stylesheet" href="{{ site.baseurl }}/common/css/stylesheet-fonts.css" type="text/css" charset="utf-8">
-	<link rel="icon" href="{{ site.baseurl }}/common/css/favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" href="{{ site.baseurl }}/common/css/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="/common/css/stylesheet.css"/>
+	<link rel="stylesheet" href="/common/css/stylesheet-fonts.css" type="text/css" charset="utf-8">
+	<link rel="icon" href="/common/css/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/common/css/favicon.ico" type="image/x-icon">
 	<title>Magento Commerce Release Notes (1.14 and later)</title>
 
 </head>
@@ -16,8 +14,17 @@
 <body>
 <a name="top"></a>
 
-<img src="{{ site.baseurl }}/common/images/m1x/m1xheader.png" width="1024" alt="header" />
-{% include m1x/eol_message.html %}
+<img src="/common/images/m1x/m1xheader.png" width="1024" alt="header" />
+<div class="message-banner">
+  <h4>Magento 1.x Software Support Notice</h4>
+  <p>
+    For Magento Commerce 1, Magento is providing software support through June 2020. Depending on your Magento Commerce 1 version, software support may include both quality fixes and security patches. Please review our <a href="https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf">Magento Software Lifecycle Policy</a> to see how your version of Magento Commerce 1 is supported.
+  </p>
+  <p>
+  	For Magento Open Source 1.5 to 1.9, Magento is providing software security patches through June 2020 to ensure those sites remain secure and compliant. Visit our <a href="https://info2.magento.com/M1OpenSource.html">information page</a> for more details about our software maintenance policy and other considerations for your business.
+  </p>
+</div>
+
 
   
 <h1>Magento Commerce Release Notes (1.14 and later)</h1>
@@ -50,7 +57,7 @@
 
 
 <h2 id="upgrade">Important Upgrade Information</h2>
-<div class="msg-box important"><img src="{{ site.baseurl }}/common/images/m1x/icon-important.png" alt="important" align="left" width="40"><span><strong>Important</strong>: Use Magento Commerce 1.14.3.0 or later for <em>all new Magento Commerce installations and upgrades</em> to get the latest fixes, features, and security updates.</span></div>
+<div class="msg-box important"><img src="/common/images/m1x/icon-important.png" alt="important" align="left" width="40"><span><strong>Important</strong>: Use Magento Commerce 1.14.3.0 or later for <em>all new Magento Commerce installations and upgrades</em> to get the latest fixes, features, and security updates.</span></div>
 
 
 
@@ -125,7 +132,7 @@
 
 <h3>Notes</h3>
 
-<ul><li> We no longer support custom file extensions for <code>Mage::log()</code>. Supported file extensions include <code>.log</code>, <code>.txt</code>, <code>.html</code>, <code>.csv</code>. For more information, navigate to <b>Developers > Log Settings</b> from the Admin. Magento displays this comment: <b>Logging from Mage::log(). File is located in {{ base_dir }}/var/log. Allowed file extensions: log, txt, html, csv.</b> </li>
+<ul><li> We no longer support custom file extensions for <code>Mage::log()</code>. Supported file extensions include <code>.log</code>, <code>.txt</code>, <code>.html</code>, <code>.csv</code>. For more information, navigate to <b>Developers > Log Settings</b> from the Admin. Magento displays this comment: <b>Logging from Mage::log(). File is located in /var/log. Allowed file extensions: log, txt, html, csv.</b> </li>
 
 <li>Passwords for new users are now limited to  256 characters. If a new user enters a password that exceeds 256 characters, Magento displays this message: <b>Please enter a password with at most 256 characters</b>. </li>
 </ul>
@@ -263,7 +270,7 @@ This patch is available from <a href="https://magento.com/tech-resources/downloa
 
 </ul>
 
-<div class="msg-box important"><img src="{{ site.baseurl }}/common/images/m1x/icon-note.png" alt="note" align="left" width="40"><span><strong>Note</strong>: You currently <em>cannot</em> upgrade to this version using Magento Connect Manager. We expect to resolve this issue soon.</div>
+<div class="msg-box important"><img src="/common/images/m1x/icon-note.png" alt="note" align="left" width="40"><span><strong>Note</strong>: You currently <em>cannot</em> upgrade to this version using Magento Connect Manager. We expect to resolve this issue soon.</div>
 
 
 <h2 id="ee114-11430">Magento Commerce 1.14.3.0 Release Notes</h2>
@@ -537,7 +544,7 @@ skin/adminhtml/default/default/media/uploaderSingle.swf</pre>
 <li>Customers using a smartphone or other small viewport can expand subcategories in the web store that uses the new responsive theme.</li></ul>
 
 <h2 id="ee114-patches">Recent Patches</h2>
-<div class="msg-box important"><img src="{{ site.baseurl }}/common/images/m1x/icon-note.png" alt="note" align="left" width="40"><span><strong>Note</strong>: The patches discussed in this section are built in to Commerce 1.14.1; you need to get them only if you're running an earlier Commerce version.</div>
+<div class="msg-box important"><img src="/common/images/m1x/icon-note.png" alt="note" align="left" width="40"><span><strong>Note</strong>: The patches discussed in this section are built in to Commerce 1.14.1; you need to get them only if you're running an earlier Commerce version.</div>
 
 <p>We'd like to draw your attention to several new patches that were recently posted to the Partner Portal and Support Center. These patches deliver important improvements, such as enabling several concurrent administrators to work with the product catalog, and to make it easier to install community-created translation packages.</p>
 <p>Details about the patches follow. To install these patches, see <a href="#ee114-patches-how-to-get">How to Get Patches For Magento Commerce</a>.</p>
@@ -554,7 +561,7 @@ skin/adminhtml/default/default/media/uploaderSingle.swf</pre>
 <li><!-- <a href="https://jira.corp.magento.com/browse/MPERF-4558" target="_blank">MPERF-4558</a>, <a href="https://jira.corp.magento.com/browse/APPSTORE-4589" target="_blank">APPSTORE-4589</a> -->To improve security, Magento Connect now uses HTTPS by default to download extensions, rather than FTP. </li>
 <li><!-- <a href="https://jira.corp.magento.com/browse/MPERF-4558" target="_blank">MPERF-4558</a>, <a href="https://jira.corp.magento.com/browse/APPSTORE-4557" target="_blank">APPSTORE-4557</a> -->Extension developers can now create an extensions with a dash character in the name. Merchants can install those extensions without issues.</li>
 <li><!-- <a href="https://jira.corp.magento.com/browse/MPERF-4558" target="_blank">MPERF-4558</a>, <a href="https://jira.corp.magento.com/browse/APPSTORE-4575" target="_blank">APPSTORE-4575</a> -->Magento administrators who attempt to install an extension with insufficient file system privileges are now informed. Typically, the Magento Admin Panel runs as the web server user. If this user has insufficient privileges to the <em>your Magento install dir</em><code>/app/code/community</code> directory structure, the Magento administrator sees an error message in the Magento Connect Manager.<br />
-To set file system permissions appropriately, see <a href="{{ site.m1xgdeurl }}install/installer-privileges_after.html#extensions" target="_blank">After You Install Magento: Recommended File System Ownership and Privileges</a>.</li></ul>
+To set file system permissions appropriately, see <a href="/guides/m1x/install/installer-privileges_after.html#extensions" target="_blank">After You Install Magento: Recommended File System Ownership and Privileges</a>.</li></ul>
 
 <h3 id="ee114-patches-soap">Magento Install Page Displays After SOAP v2 Index Page Refresh</h3>
 <p><em>Patch name</em>: PATCH_SUPEE-3762_EE_1.14.0.1_v1.sh. <!-- <a href="https://jira.corp.magento.com/browse/SUPEE-3762" target="_blank">SUPEE-3762</a> -->Refreshing the SOAP v2 index page (<code>http://<em>your-magento-host-name</em>/index.php/api/v2_soap/index/</code>) results in all administrators and customers viewing the Magento installation page.</p>
@@ -579,7 +586,7 @@ To set file system permissions appropriately, see <a href="{{ site.m1xgdeurl }}i
 <li>In the left pane, click <strong>Downloads</strong>.</li>
 <li>In the right pane, click <strong>Magento Commerce</strong>.</li>
 <li>Follow the prompts on your screen to download a patch for your version of EE.</li>
-<li>Apply the patch as discussed in <a href="{{ site.m1xgdeurl }}other/ht_install-patches.html" target="_blank">How to Apply and Revert Magento Patches</a>.</li></ol>
+<li>Apply the patch as discussed in <a href="/guides/m1x/other/ht_install-patches.html" target="_blank">How to Apply and Revert Magento Patches</a>.</li></ol>
 
 <h2 id="ee114-11400">Magento Commerce 1.14.0.0 Release Notes</h2>
 <p>See the following sections for information about changes in this release:</p>
@@ -598,7 +605,7 @@ To set file system permissions appropriately, see <a href="{{ site.m1xgdeurl }}i
 </li>
 <li>Magento Commerce 1.14 now supports Solr versions up to 3.6.2 natively (that is, without a patch). Catalog indexing happens efficiently and automatically in the background, with no manual intervention required, resulting in better administrative performance. <br />
 For more information about using Solr with Magento Commerce, see the <a href="http://www.magentocommerce.com/resources/magento-user-guide" target="_blank">Magento User Guide</a>.<br />
-<strong>Note</strong>: If you're using the Solr search engine with Commerce versions 1.13.1 or earlier, you must perform an additional step during upgrade due to the fact that the Solr schema changes in Commerce 1.14. You must copy two files to your Solr server&mdash;<code>schema.xml</code> and <code>solrconfig.xml</code>. For details, see <a href="{{ site.m1xgdeurl }}install/installing_upgrade_details.html#upgrade-manual-solr" target="_blank">the section on upgrading Solr in the Magento upgrade guide</a>.</li>
+<strong>Note</strong>: If you're using the Solr search engine with Commerce versions 1.13.1 or earlier, you must perform an additional step during upgrade due to the fact that the Solr schema changes in Commerce 1.14. You must copy two files to your Solr server&mdash;<code>schema.xml</code> and <code>solrconfig.xml</code>. For details, see <a href="/guides/m1x/install/installing_upgrade_details.html#upgrade-manual-solr" target="_blank">the section on upgrading Solr in the Magento upgrade guide</a>.</li>
 <li>Cross-border trade: (Also referred to as <em>pricing consistency</em>.) We support European Union (EU) merchants operating across regions and geographies who want to show their customers a single price. Pricing is clean and uncluttered regardless of tax structures and rates that vary from country to country.<br />
 To enable cross-border trade in the Admin Panel, click <strong>System</strong> > <strong>Configuration</strong> > SALES > <strong>Tax</strong> > <strong>Calculation Settings</strong>, option <strong>Enable Cross Border Trade</strong>.</li>
 <li>Supports <a href="http://www.php.net/manual/en/migration54.changes.php" target="_blank">PHP 5.4</a>. For more information, see <a href="http://php.net/ChangeLog-5.php#5.4.0" target="_blank">the PHP changelog</a>.</li>
@@ -632,7 +639,7 @@ To enable cross-border trade in the Admin Panel, click <strong>System</strong> >
 <li><!-- <a href="https://jira.corp.magento.com/browse/MPERF-2563" target="_blank">MPERF-2563</a> -->Two new options to prevent <a href="http://en.wikipedia.org/wiki/Clickjacking" target="_blank">"clickjacking"</a> if you run Magento in a <code>frame</code> or <code>iframe</code>:
 <ul><li>Enable frames only in the same domain.</li>
 <li>Enable frames.</li>
-<div class="msg-box important"><img src="{{ site.baseurl }}/common/images/m1x/icon-note.png" alt="note" align="left" width="40"><span><strong>Note</strong>: For security reasons, Magento strongly recommends against running the Magento software in a frame.</div>
+<div class="msg-box important"><img src="/common/images/m1x/icon-note.png" alt="note" align="left" width="40"><span><strong>Note</strong>: For security reasons, Magento strongly recommends against running the Magento software in a frame.</div>
 
 <p>The options are available in the Admin Panel at <strong>System</strong> > <strong>Configuration</strong> > ADVANCED > <strong>Admin</strong> > <strong>Security</strong> and are named <strong>Allow Magento Backend to run in frame</strong> and <strong> Allow Magento Frontend to run in frame</strong>.</p>
 <p>Enabling the option causes the <a href="https://developer.mozilla.org/en-US/docs/HTTP/X-Frame-Options" target="_blank"><code>X-Frame-Options</code></a> request header to be sent.</p></ul>
@@ -645,7 +652,7 @@ To enable cross-border trade in the Admin Panel, click <strong>System</strong> >
 <!-- <li><a href="https://jira.corp.magento.com/browse/MPERF-3769" target="_blank">MPERF-3769</a> Added address validation, which enables users to select from multiple matching addresses. For example, if a user enters a partial address or a common street name, they might be presented with matching addresses from which to choose.</li>
  -->
 <li><!-- <a href="https://jira.corp.magento.com/browse/MPERF-4620" target="_blank">MPERF-4620</a>.  -->Magento Commerce 1.14 includes a fix that prevented some Discover credit cards from validating properly. The issue was that certain Discover credit card number ranges were not recognized as being valid. As a result of the fix, all Discover cards should validate properly.</p>
-<div class="msg-box important"><img src="{{ site.baseurl }}/common/images/m1x/icon-note.png" alt="note" align="left" width="40"><span><strong>Note</strong>: This is <em>not</em> a security threat. No data has been compromised or misused. It affects only the ability to validate certain credit card number ranges as valid Discover card numbers.</div></li>
+<div class="msg-box important"><img src="/common/images/m1x/icon-note.png" alt="note" align="left" width="40"><span><strong>Note</strong>: This is <em>not</em> a security threat. No data has been compromised or misused. It affects only the ability to validate certain credit card number ranges as valid Discover card numbers.</div></li>
 <li>If you use the Solr search engine, you no longer need to manually reindex the Catalog Search Index (except after you upgrade to EE 1.14 from an earlier version).</li>
 <li>The default values for two configuration options changed. Both options can be found in the Admin Panel under <strong>System</strong> > <strong>Configuration</strong> > CATALOG > <strong>Catalog</strong> > <strong>Frontend</strong>. The new default values follow:
 <ul><li><strong>Products per Page on Grid Allowed Values</strong> is now <strong>12, 24, 36</strong>.</li>
