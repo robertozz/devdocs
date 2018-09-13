@@ -16,7 +16,7 @@ functional_areas:
   - System
   - Setup
 ---
-
+{% include fake/file.md %}
 ## Magento software installation
 
 Hi, we're glad you're among the 240,000 merchants worldwide who put their trust in our eCommerce software. We've gathered some information to help you get started with Magento and with your Magento installation.
