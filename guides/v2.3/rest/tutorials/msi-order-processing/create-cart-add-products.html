@@ -1322,7 +1322,7 @@
 
 <p>In <a href="reassign-products-to-another-source.html">Step 6. Reassign products to another source</a>, we defined the quantities of products <code class="highlighter-rouge">sp1</code> and <code class="highlighter-rouge">sp2</code> for the UK source as follows:</p>
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Product</th>
@@ -1436,8 +1436,10 @@
 
 <p><strong>Response</strong></p>
 
+<p>Note the <code class="highlighter-rouge">item_id</code> for use in subsequent steps.</p>
+
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="s2">"item_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"item_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="s2">"sku"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sp1"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"qty"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
     </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Simple Product 1"</span><span class="p">,</span><span class="w">
@@ -1463,7 +1465,7 @@
 <p><strong>Response</strong></p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="s2">"item_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"item_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
     </span><span class="s2">"sku"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sp2"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"qty"</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="p">,</span><span class="w">
     </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Simple Product 2"</span><span class="p">,</span><span class="w">
@@ -1473,7 +1475,7 @@
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<h3 id="add-a-virtual-product_type">Add a virtual product_type</h3>
+<h3 id="add-a-virtual-product">Add a virtual product</h3>
 
 <p>Finally, we’ll add a single instance of a virtual product to the cart.</p>
 
@@ -1491,7 +1493,7 @@
 <p><strong>Response</strong></p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="s2">"item_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"item_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
     </span><span class="s2">"sku"</span><span class="p">:</span><span class="w"> </span><span class="s2">"vp1"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"qty"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Gold Club Membership"</span><span class="p">,</span><span class="w">
