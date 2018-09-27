@@ -149,6 +149,25 @@
   
   
   <li>
+    <a href="/guides/v2.3/cloud/setup/first-time-setup.html">Local Development</a>
+  </li>
+
+
+
+          
+        
+          
+          
+            
+
+
+
+
+
+  
+  
+  
+  <li>
     <a href="/guides/v2.3/cloud/env/environments.html">Configure Environments</a>
   </li>
 
@@ -187,7 +206,7 @@
   
   
   <li>
-    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">ece-tools Release Notes</a>
+    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">Release Notes</a>
   </li>
 
 
@@ -356,7 +375,7 @@
   
   
   <li>
-    <a href="/magento-release-information.html">Release Information</a>
+    <a href="/guides/v2.3/release-notes/bk-release-notes.html">Release Information</a>
   </li>
 
 
@@ -1635,7 +1654,7 @@
 
 <p>In general, we’ve removed serialize/unserialize from most the code to improve protection against remote code execution attacks. We’ve enhanced protection of code where use of object serialization or unserialization was unavoidable.  Additionally, we’ve increased our use of output escaping to protect against cross-site scripting (XSS) attacks.</p>
 
-<p><a href="https://magento.com/company/contact-us" target="_blank">Contact us</a> for more information.</p>
+<p><a href="https://magento.com/company/contact-us">Contact us</a> for more information.</p>
 
 <h2 id="known">Known issues</h2>
 
@@ -1652,7 +1671,7 @@
 
 <!-- MAGECLOUD-1355 -->
 <ul>
-  <li>You can now <a href="/guides/v2.2/cloud/configure/setup-cron-jobs.html#reset-cron-jobs">manually reset stuck Magento cron jobs</a> using a CLI command in all environments via SSH access. The deployment process automatically resets cron jobs. You must <a href="/guides/v2.2/cloud/project/project-patch.html">patch magento/ece-tools</a> to get this update.</li>
+  <li>You can now <a href="/guides/v2.2/cloud/trouble/reset-cron-jobs.html">manually reset stuck Magento cron jobs</a> using a CLI command in all environments via SSH access. The deployment process automatically resets cron jobs. You must <a href="/guides/v2.2/cloud/project/project-patch.html">patch magento/ece-tools</a> to get this update.</li>
 </ul>
 
 <!-- 57167 -->
@@ -1702,7 +1721,7 @@
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">ADMIN_EMAIL</code> variable must be set. We require the <code class="highlighter-rouge">ADMIN_EMAIL</code> environment variable configured for deployments. You can set this variable through the Project Web Interface. This is required for new installations and upgrades. For instructions, see <a href="/guides/v2.2/cloud/before/before-project-owner.html#variables">Add admin variables for Admin access</a>.</p>
+    <p><code class="highlighter-rouge">ADMIN_EMAIL</code> variable must be set. We require the <code class="highlighter-rouge">ADMIN_EMAIL</code> environment variable configured for deployments. You can set this variable through the Project Web Interface. This is required for new installations and upgrades. For instructions, see <a href="/guides/v2.2/cloud/before/before-project-owner.html">Add admin variables for Admin access</a>.</p>
   </li>
   <li>
     <p>Update and include <code class="highlighter-rouge">config.php</code> and add a list of all modules. If you use Configuration Management with a <code class="highlighter-rouge">config.local.php</code> file, you must create a <code class="highlighter-rouge">config.php</code> and add it to your code. For instructions, see <a href="/guides/v2.2/cloud/project/project-upgrade.html">Configuration Management and upgrading</a>.</p>
@@ -1744,11 +1763,11 @@
 
 <p>For Magento Commerce Cloud requirements, see <a href="/guides/v2.2/cloud/requirements/cloud-requirements.html">Technologies and Requirements</a>.</p>
 
-<p>The Magento Commerce technology stack is built on PHP and MySQL. For details, see <a href="/guides/v2.3/install-gde/system-requirements-tech.html">Technology stack requirements</a> and <a href="/magento-system-requirements.html" target="_blank">System Requirements</a>.</p>
+<p>The Magento Commerce technology stack is built on PHP and MySQL. For details, see <a href="/guides/v2.3/install-gde/system-requirements-tech.html">Technology stack requirements</a> and <a href="/magento-system-requirements.html">System Requirements</a>.</p>
 
 <h2 id="install-upgrade">Installation and upgrade instructions</h2>
 
-<p>If installing and working with Magento Commerce Cloud for the first time, we recommend <a href="/guides/v2.3/cloud/access-acct/first-time-setup.html">First-time local environment setup</a>.</p>
+<p>If installing and working with Magento Commerce Cloud for the first time, we recommend <a href="/guides/v2.3/cloud/setup/first-time-setup.html">First-time local environment setup</a>.</p>
 
 <p>To test and implement your Magento Commerce Cloud upgrade, see <a href="/guides/v2.3/cloud/project/project-upgrade.html">Upgrade Magento Commerce (Cloud)</a>. We include upgrade paths and additional instructions for upgrading from 2.0.X and 2.1.X.</p>
 
@@ -1815,6 +1834,8 @@
   <li><a href="http://magento.com/legal/terms/privacy/">Privacy Policy</a></li>
   <li><a href="http://magento.com/legal/terms/">Terms of Service</a></li>
   <li><a href="http://magento.com/legal/licensing/">License/Trademark FAQ</a></li>
+  <!-- If the page is in the root, the link points to the default version of release notes.
+       The default version is set in the config.yaml.-->
   <li><a href="/guides/v2.3/release-notes/bk-release-notes.html">Release Notes</a></li>
   <li><a href="/magento-third-party.html">Third-Party Licenses</a></li>
 </ul>

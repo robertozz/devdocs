@@ -149,6 +149,25 @@
   
   
   <li>
+    <a href="/guides/v2.0/cloud/setup/first-time-setup.html">Local Development</a>
+  </li>
+
+
+
+          
+        
+          
+          
+            
+
+
+
+
+
+  
+  
+  
+  <li>
     <a href="/guides/v2.0/cloud/env/environments.html">Configure Environments</a>
   </li>
 
@@ -336,7 +355,7 @@
   
   
   <li>
-    <a href="/magento-release-information.html">Release Information</a>
+    <a href="/guides/v2.0/release-notes/bk-release-notes.html">Release Information</a>
   </li>
 
 
@@ -1889,7 +1908,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.0/mtf/mtf_changelog.html">Changelog</a>
+    <a href="https://github.com/magento/mtf/blob/develop/CHANGELOG.md">Changelog</a>
   
 
   
@@ -1937,7 +1956,7 @@
 
 <div class="collapsible">
     <b class="collapsible-title">Show/hide the default phpunit.xml code </b>
-    <div class="collapsible-content"><figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+    <div class="collapsible-content"><div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
 <span class="c">&lt;!--
 /**
  * Copyright © 2013-2017 Magento, Inc. All rights reserved.
@@ -1980,7 +1999,9 @@
         <span class="nt">&lt;env</span> <span class="na">name=</span><span class="s">"mage_mode"</span> <span class="na">value=</span><span class="s">"developer"</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;/php&gt;</span>
 
-<span class="nt">&lt;/phpunit&gt;</span></code></pre></figure>
+<span class="nt">&lt;/phpunit&gt;</span>
+
+</code></pre></div></div>
 </div>
   </div>
 
@@ -2077,7 +2098,7 @@
     <b class="collapsible-title">in the Framework </b>
     <div class="collapsible-content"><p>The file is located in <code class="highlighter-rouge">&lt;magento2_root_dir&gt;dev/tests/functional/vendor/magento/mtf/etc</code></p>
 
-<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
 <span class="c">&lt;!--
 /**
  * Copyright © 2015 Magento. All rights reserved.
@@ -2108,7 +2129,9 @@
         <span class="nt">&lt;curl</span> <span class="na">priority=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
         <span class="nt">&lt;ui</span> <span class="na">priority=</span><span class="s">"1"</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;/handler&gt;</span>
-<span class="nt">&lt;/config&gt;</span></code></pre></figure>
+<span class="nt">&lt;/config&gt;</span>
+
+</code></pre></div></div>
 
 <p><img src="/common/images/ftf/ftf_mtf-config-xsd-dia.svg" alt="image" /></p>
 
@@ -2120,7 +2143,7 @@
     <b class="collapsible-title">in Magento functional tests </b>
     <div class="collapsible-content"><p>The file is located in <code class="highlighter-rouge">&lt;magento2_root_dir&gt;dev/tests/functional/</code></p>
 
-<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
 <span class="c">&lt;!--
 /**
  * Copyright © 2013-2017 Magento, Inc. All rights reserved.
@@ -2150,7 +2173,9 @@
         <span class="nt">&lt;curl</span> <span class="na">priority=</span><span class="s">"1"</span> <span class="nt">/&gt;</span>
         <span class="nt">&lt;ui</span> <span class="na">priority=</span><span class="s">"2"</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;/handler&gt;</span>
-<span class="nt">&lt;/config&gt;</span></code></pre></figure>
+<span class="nt">&lt;/config&gt;</span>
+
+</code></pre></div></div>
 
 <p><img src="/common/images/ftf/ftf_config-xsd-dia.svg" alt="image" /></p>
 
@@ -2430,6 +2455,8 @@
   <li><a href="http://magento.com/legal/terms/privacy/">Privacy Policy</a></li>
   <li><a href="http://magento.com/legal/terms/">Terms of Service</a></li>
   <li><a href="http://magento.com/legal/licensing/">License/Trademark FAQ</a></li>
+  <!-- If the page is in the root, the link points to the default version of release notes.
+       The default version is set in the config.yaml.-->
   <li><a href="/guides/v2.0/release-notes/bk-release-notes.html">Release Notes</a></li>
   <li><a href="/magento-third-party.html">Third-Party Licenses</a></li>
 </ul>

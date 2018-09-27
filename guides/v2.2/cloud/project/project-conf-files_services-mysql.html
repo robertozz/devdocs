@@ -149,6 +149,25 @@
   
   
   <li>
+    <a href="/guides/v2.2/cloud/setup/first-time-setup.html">Local Development</a>
+  </li>
+
+
+
+          
+        
+          
+          
+            
+
+
+
+
+
+  
+  
+  
+  <li>
     <a href="/guides/v2.2/cloud/env/environments.html">Configure Environments</a>
   </li>
 
@@ -187,7 +206,7 @@
   
   
   <li>
-    <a href="/guides/v2.2/cloud/release-notes/cloud-tools.html">ece-tools Release Notes</a>
+    <a href="/guides/v2.2/cloud/release-notes/cloud-tools.html">Release Notes</a>
   </li>
 
 
@@ -356,7 +375,7 @@
   
   
   <li>
-    <a href="/magento-release-information.html">Release Information</a>
+    <a href="/guides/v2.2/release-notes/bk-release-notes.html">Release Information</a>
   </li>
 
 
@@ -1696,7 +1715,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.2/cloud/setup/first-time-setup.html">Local environment setup</a>
+    <a href="/guides/v2.2/cloud/setup/first-time-setup.html">Local development setup</a>
   
 
   
@@ -1716,7 +1735,27 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.2/cloud/before/before-workspace.html">Prepare for local environment setup</a>
+    <a href="/guides/v2.2/cloud/docker/docker-development.html">Docker development</a>
+  
+
+  
+    <ul>
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.2/cloud/docker/docker-config.html">Launch Docker</a>
   
 
   
@@ -1724,6 +1763,33 @@
 
 
 
+      
+    </ul>
+  
+</li>
+
+
+
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.2/cloud/before/before-workspace.html">Prepare for manual setup</a>
+  
+
+  
+    <ul>
       
          
 
@@ -1863,6 +1929,13 @@
 
 
       
+    </ul>
+  
+</li>
+
+
+
+      
          
 
 
@@ -1901,29 +1974,6 @@
 <li class=" ">
   
     <a href="/guides/v2.2/cloud/howtos/debug.html">Optional - Configure Xdebug</a>
-  
-
-  
-</li>
-
-
-
-      
-         
-
-
-
-
-
-  
-  
-  
-
-  
-  
-<li class=" ">
-  
-    <a href="/guides/v2.2/cloud/reference/docker-config.html">Configure Docker</a>
   
 
   
@@ -3851,7 +3901,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.2/cloud/release-notes/cloud-tools.html">ece-tools release notes</a>
+    <a href="/guides/v2.2/cloud/release-notes/cloud-tools.html">Release notes for ece-tools</a>
   
 
   
@@ -3993,7 +4043,7 @@
 
 </section>
 
-			<p>The <code class="highlighter-rouge">mysql</code> service provides data storage. It’s based on <a href="https://mariadb.com/products/subscription-plans" target="_blank">MariaDB</a>, supporting the <a href="https://www.percona.com/software/mysql-database/percona-server/xtradb" target="_blank">XtraDB</a> storage
+			<p>The <code class="highlighter-rouge">mysql</code> service provides data storage. It’s based on <a href="https://mariadb.com/products/subscription-plans">MariaDB</a>, supporting the <a href="https://www.percona.com/software/mysql-database/percona-server/xtradb">XtraDB</a> storage
 engine (equivalent to MySQL with InnoDB).</p>
 
 <p>We support MariaDB version 10.0, which includes reimplemented features from MySQL 5.6 and 5.7.</p>
@@ -4072,7 +4122,7 @@ following command:</p>
 <p>Merge and deploy the code to set the configurations for Redis. For information on how these changes affect your environments, see <a href="/guides/v2.2/cloud/project/project-conf-files_services.html"><code class="highlighter-rouge">services.yaml</code></a>.</p>
 
 <ul class="bs-callout bs-callout-info">
-  <li>If you configure one MySQL user, you cannot use the <a href="http://dev.mysql.com/doc/refman/5.6/en/show-grants.html" target="_blank"><code class="highlighter-rouge">DEFINER</code></a> access control mechanism for stored procedures and views.</li>
+  <li>If you configure one MySQL user, you cannot use the <a href="http://dev.mysql.com/doc/refman/5.6/en/show-grants.html"><code class="highlighter-rouge">DEFINER</code></a> access control mechanism for stored procedures and views.</li>
   <li>MySQL errors such as <code class="highlighter-rouge">PDO Exception 'MySQL server has gone away</code> are usually the result of exhausting your existing disk space. Be sure you have sufficient space allocated to the service in <a href="/guides/v2.2/cloud/project/project-conf-files_magento-app.html#disk"><code class="highlighter-rouge">.magento/services.yaml</code></a>.</li>
 </ul>
 
@@ -4162,6 +4212,8 @@ following command:</p>
   <li><a href="http://magento.com/legal/terms/privacy/">Privacy Policy</a></li>
   <li><a href="http://magento.com/legal/terms/">Terms of Service</a></li>
   <li><a href="http://magento.com/legal/licensing/">License/Trademark FAQ</a></li>
+  <!-- If the page is in the root, the link points to the default version of release notes.
+       The default version is set in the config.yaml.-->
   <li><a href="/guides/v2.2/release-notes/bk-release-notes.html">Release Notes</a></li>
   <li><a href="/magento-third-party.html">Third-Party Licenses</a></li>
 </ul>

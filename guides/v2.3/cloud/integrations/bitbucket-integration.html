@@ -149,6 +149,25 @@
   
   
   <li>
+    <a href="/guides/v2.3/cloud/setup/first-time-setup.html">Local Development</a>
+  </li>
+
+
+
+          
+        
+          
+          
+            
+
+
+
+
+
+  
+  
+  
+  <li>
     <a href="/guides/v2.3/cloud/env/environments.html">Configure Environments</a>
   </li>
 
@@ -187,7 +206,7 @@
   
   
   <li>
-    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">ece-tools Release Notes</a>
+    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">Release Notes</a>
   </li>
 
 
@@ -356,7 +375,7 @@
   
   
   <li>
-    <a href="/magento-release-information.html">Release Information</a>
+    <a href="/guides/v2.3/release-notes/bk-release-notes.html">Release Information</a>
   </li>
 
 
@@ -1714,7 +1733,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.3/cloud/setup/first-time-setup.html">Local environment setup</a>
+    <a href="/guides/v2.3/cloud/setup/first-time-setup.html">Local development setup</a>
   
 
   
@@ -1734,7 +1753,27 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.3/cloud/before/before-workspace.html">Prepare for local environment setup</a>
+    <a href="/guides/v2.3/cloud/docker/docker-development.html">Docker development</a>
+  
+
+  
+    <ul>
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.3/cloud/docker/docker-config.html">Launch Docker</a>
   
 
   
@@ -1742,6 +1781,33 @@
 
 
 
+      
+    </ul>
+  
+</li>
+
+
+
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.3/cloud/before/before-workspace.html">Prepare for manual setup</a>
+  
+
+  
+    <ul>
       
          
 
@@ -1881,6 +1947,13 @@
 
 
       
+    </ul>
+  
+</li>
+
+
+
+      
          
 
 
@@ -1919,29 +1992,6 @@
 <li class=" ">
   
     <a href="/guides/v2.3/cloud/howtos/debug.html">Optional - Configure Xdebug</a>
-  
-
-  
-</li>
-
-
-
-      
-         
-
-
-
-
-
-  
-  
-  
-
-  
-  
-<li class=" ">
-  
-    <a href="/guides/v2.3/cloud/reference/docker-config.html">Configure Docker</a>
   
 
   
@@ -3855,7 +3905,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">ece-tools release notes</a>
+    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">Release notes for ece-tools</a>
   
 
   
@@ -4001,7 +4051,7 @@
 
 <p>For Pro projects <strong>created before October 23, 2017</strong>, this integration works on Integration environments <em>only</em>. You must <a href="/guides/v2.3/cloud/trouble/pro-env-management.html">request an upgrade</a> before you can use this integration on Staging and Production environments.</p>
 
-<p class="bs-callout bs-callout-info">We <em>strongly</em> recommend using a private Bitbucket repository for your Magento Commerce Cloud project.</p>
+<p class="bs-callout bs-callout-info">We <em>strongly</em> recommend using a private repository for your Magento Commerce Cloud project to protect any proprietary information or development work, such as extensions and sensitive configurations.</p>
 
 <p>Before you enable the integration, you must have the following:</p>
 
@@ -4076,13 +4126,13 @@ origin git@bitbucket.org:&lt;user-name&gt;/&lt;repo-name&gt;.git (push)
 
 <h2 id="create-an-oauth-consumer">Create an OAuth consumer</h2>
 
-<p>The Bitbucket integration requires an <a href="https://confluence.atlassian.com/x/pwIwDg" target="_blank">OAuth consumer</a>. You need the OAuth <code class="highlighter-rouge">key</code> and <code class="highlighter-rouge">secret</code> from this consumer to complete the next section.</p>
+<p>The Bitbucket integration requires an <a href="https://confluence.atlassian.com/x/pwIwDg">OAuth consumer</a>. You need the OAuth <code class="highlighter-rouge">key</code> and <code class="highlighter-rouge">secret</code> from this consumer to complete the next section.</p>
 
 <h4 id="to-create-an-oauth-consumer-in-bitbucket">To create an OAuth consumer in Bitbucket:</h4>
 
 <ol>
   <li>
-    <p>Log in to your <a href="https://bitbucket.org/account/signin/" target="_blank">Bitbucket</a> account.</p>
+    <p>Log in to your <a href="https://bitbucket.org/account/signin/">Bitbucket</a> account.</p>
   </li>
   <li>
     <p>Click <strong>Settings</strong> &gt; <strong>Access Management</strong> &gt; <strong>OAuth</strong>.</p>
@@ -4167,7 +4217,7 @@ origin git@bitbucket.org:&lt;user-name&gt;/&lt;repo-name&gt;.git (push)
 
 <ol>
   <li>
-    <p>Log in to your <a href="https://bitbucket.org/account/signin/" target="_blank">Bitbucket</a> account.</p>
+    <p>Log in to your <a href="https://bitbucket.org/account/signin/">Bitbucket</a> account.</p>
   </li>
   <li>
     <p>Click <strong>Repositories</strong> and select your project.</p>
@@ -4332,6 +4382,8 @@ Parent environment [master]: integration
   <li><a href="http://magento.com/legal/terms/privacy/">Privacy Policy</a></li>
   <li><a href="http://magento.com/legal/terms/">Terms of Service</a></li>
   <li><a href="http://magento.com/legal/licensing/">License/Trademark FAQ</a></li>
+  <!-- If the page is in the root, the link points to the default version of release notes.
+       The default version is set in the config.yaml.-->
   <li><a href="/guides/v2.3/release-notes/bk-release-notes.html">Release Notes</a></li>
   <li><a href="/magento-third-party.html">Third-Party Licenses</a></li>
 </ul>

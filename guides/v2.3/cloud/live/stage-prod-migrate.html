@@ -149,6 +149,25 @@
   
   
   <li>
+    <a href="/guides/v2.3/cloud/setup/first-time-setup.html">Local Development</a>
+  </li>
+
+
+
+          
+        
+          
+          
+            
+
+
+
+
+
+  
+  
+  
+  <li>
     <a href="/guides/v2.3/cloud/env/environments.html">Configure Environments</a>
   </li>
 
@@ -187,7 +206,7 @@
   
   
   <li>
-    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">ece-tools Release Notes</a>
+    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">Release Notes</a>
   </li>
 
 
@@ -356,7 +375,7 @@
   
   
   <li>
-    <a href="/magento-release-information.html">Release Information</a>
+    <a href="/guides/v2.3/release-notes/bk-release-notes.html">Release Information</a>
   </li>
 
 
@@ -1714,7 +1733,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.3/cloud/setup/first-time-setup.html">Local environment setup</a>
+    <a href="/guides/v2.3/cloud/setup/first-time-setup.html">Local development setup</a>
   
 
   
@@ -1734,7 +1753,27 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.3/cloud/before/before-workspace.html">Prepare for local environment setup</a>
+    <a href="/guides/v2.3/cloud/docker/docker-development.html">Docker development</a>
+  
+
+  
+    <ul>
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.3/cloud/docker/docker-config.html">Launch Docker</a>
   
 
   
@@ -1742,6 +1781,33 @@
 
 
 
+      
+    </ul>
+  
+</li>
+
+
+
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.3/cloud/before/before-workspace.html">Prepare for manual setup</a>
+  
+
+  
+    <ul>
       
          
 
@@ -1881,6 +1947,13 @@
 
 
       
+    </ul>
+  
+</li>
+
+
+
+      
          
 
 
@@ -1919,29 +1992,6 @@
 <li class=" ">
   
     <a href="/guides/v2.3/cloud/howtos/debug.html">Optional - Configure Xdebug</a>
-  
-
-  
-</li>
-
-
-
-      
-         
-
-
-
-
-
-  
-  
-  
-
-  
-  
-<li class=" ">
-  
-    <a href="/guides/v2.3/cloud/reference/docker-config.html">Configure Docker</a>
   
 
   
@@ -3855,7 +3905,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">ece-tools release notes</a>
+    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">Release notes for ece-tools</a>
   
 
   
@@ -4134,7 +4184,7 @@
 <p>You will migrate   <span term-uuid="363662cb-73f1-4347-a15e-2d2adabeb0c2" class="glossary-term" data-toggle="popover">static files</span>
  from your <code class="highlighter-rouge">pub/media</code> directory to Staging or Production.</p>
 
-<p>We recommend using the Linux remote synchronization and file transfer command <a href="https://en.wikipedia.org/wiki/Rsync" target="_blank"><code class="highlighter-rouge">rsync</code></a>. rsync uses an algorithm that minimizes the amount of data by moving only the portions of files that have changed; in addition, it supports compression.</p>
+<p>We recommend using the Linux remote synchronization and file transfer command <a href="https://en.wikipedia.org/wiki/Rsync"><code class="highlighter-rouge">rsync</code></a>. rsync uses an algorithm that minimizes the amount of data by moving only the portions of files that have changed; in addition, it supports compression.</p>
 
 <p>We suggest using the following syntax:</p>
 
@@ -4149,7 +4199,7 @@ v verbose
 P partial progress
 </code></pre></div></div>
 
-<p>For additional options, see the <a href="http://linux.die.net/man/1/rsync" target="_blank">rsync man page</a>.</p>
+<p>For additional options, see the <a href="http://linux.die.net/man/1/rsync">rsync man page</a>.</p>
 
 <p>To migrate static files from your local machine:</p>
 
@@ -4181,7 +4231,7 @@ P partial progress
 
 <h2 id="cloud-live-migrate-db">Migrate the database</h2>
 
-<p><strong>Prerequisite:</strong> A database dump (see Step 3) should include database triggers. For dumping them, make sure you have the <a href="https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_trigger" target="_blank">TRIGGER privilege</a>.</p>
+<p><strong>Prerequisite:</strong> A database dump (see Step 3) should include database triggers. For dumping them, make sure you have the <a href="https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_trigger">TRIGGER privilege</a>.</p>
 
 <p><strong>Important:</strong> The Integration environment database is strictly for development testing and may include data you may not want to migrate into Staging and Production.</p>
 
@@ -4318,6 +4368,8 @@ P partial progress
   <li><a href="http://magento.com/legal/terms/privacy/">Privacy Policy</a></li>
   <li><a href="http://magento.com/legal/terms/">Terms of Service</a></li>
   <li><a href="http://magento.com/legal/licensing/">License/Trademark FAQ</a></li>
+  <!-- If the page is in the root, the link points to the default version of release notes.
+       The default version is set in the config.yaml.-->
   <li><a href="/guides/v2.3/release-notes/bk-release-notes.html">Release Notes</a></li>
   <li><a href="/magento-third-party.html">Third-Party Licenses</a></li>
 </ul>

@@ -149,6 +149,25 @@
   
   
   <li>
+    <a href="/guides/v2.3/cloud/setup/first-time-setup.html">Local Development</a>
+  </li>
+
+
+
+          
+        
+          
+          
+            
+
+
+
+
+
+  
+  
+  
+  <li>
     <a href="/guides/v2.3/cloud/env/environments.html">Configure Environments</a>
   </li>
 
@@ -187,7 +206,7 @@
   
   
   <li>
-    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">ece-tools Release Notes</a>
+    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">Release Notes</a>
   </li>
 
 
@@ -356,7 +375,7 @@
   
   
   <li>
-    <a href="/magento-release-information.html">Release Information</a>
+    <a href="/guides/v2.3/release-notes/bk-release-notes.html">Release Information</a>
   </li>
 
 
@@ -1995,7 +2014,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.3/mtf/mtf_changelog.html">Changelog</a>
+    <a href="https://github.com/magento/mtf/blob/develop/CHANGELOG.md">Changelog</a>
   
 
   
@@ -2054,16 +2073,15 @@
 <ol>
   <li>In <code class="highlighter-rouge">&lt;magento2_root_dir&gt;/dev/tests/functional/etc/di.xml</code>, add the <code class="highlighter-rouge">&lt;preference for="Magento\Mtf\Client\DriverInterface" type="Magento\Mtf\Client\Driver\Facebook\Driver" /&gt;</code> element.</li>
   <li>In <code class="highlighter-rouge">&lt;magento2_root_dir&gt;/dev/tests/functional/composer.json</code>, move the <code class="highlighter-rouge">"facebook/webdriver": "dev-master"</code> entry from the <code class="highlighter-rouge">"suggest"</code> list to the <code class="highlighter-rouge">"require"</code> list.</li>
-  <li>
-    <p>Run in your terminal:</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> cd &lt;magento2_root_dir&gt;/dev/tests/functional
- composer update
-</code></pre></div>    </div>
-  </li>
+  <li>Run in your terminal:</li>
 </ol>
 
-<p class="bs-callout bs-callout-info">   You still need to <a href="/guides/v2.3/mtf/mtf_quickstart/mtf_quickstart_environment.html#mtf_quickstart_env_selenium">run the Selenium Server</a> in order to run the tests, because at this point the test run procedure is not yet changed.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> &lt;magento2_root_dir&gt;/dev/tests/functional
+</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer update
+</code></pre></div></div>
+
+<p class="bs-callout bs-callout-info">You still need to <a href="/guides/v2.3/mtf/mtf_quickstart/mtf_quickstart_environment.html#mtf_quickstart_env_selenium">run the Selenium Server</a> in order to run the tests, because at this point the test run procedure is not yet changed.</p>
 
 <h2 id="add-and-setup-a-custom-web-driver">Add and setup a custom web driver</h2>
 
@@ -2078,16 +2096,15 @@
 
 <ol>
   <li>In <code class="highlighter-rouge">&lt;magento2_root_dir&gt;/dev/tests/functional/etc/di.xml</code>, add the <code class="highlighter-rouge">&lt;preference for="Magento\Mtf\Client\DriverInterface" type="Magento\Mtf\Client\Driver\&lt;Your_driver&gt;\Driver" /&gt;</code> element.</li>
-  <li>
-    <p>In <code class="highlighter-rouge">&lt;magento2_root_dir&gt;/dev/tests/functional/composer.json</code>, add corresponding entry to the <code class="highlighter-rouge">"require"</code> list (if related module is available on <a href="https://packagist.org/">Packagist</a>). And run in your terminal:</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> cd &lt;magento2_root_dir&gt;/dev/tests/functional
- composer update
-</code></pre></div>    </div>
-  </li>
+  <li>In <code class="highlighter-rouge">&lt;magento2_root_dir&gt;/dev/tests/functional/composer.json</code>, add corresponding entry to the <code class="highlighter-rouge">"require"</code> list (if related module is available on <a href="https://packagist.org/">Packagist</a>). And run in your terminal:</li>
 </ol>
 
-<p class="bs-callout bs-callout-info">   You still need to <a href="/guides/v2.3/mtf/mtf_quickstart/mtf_quickstart_environment.html#mtf_quickstart_env_selenium">run the Selenium Server</a> in order to run the tests, because at this point the test run procedure is not yet changed.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> &lt;magento2_root_dir&gt;/dev/tests/functional
+</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer update
+</code></pre></div></div>
+
+<p class="bs-callout bs-callout-info">You still need to <a href="/guides/v2.3/mtf/mtf_quickstart/mtf_quickstart_environment.html#mtf_quickstart_env_selenium">run the Selenium Server</a> in order to run the tests, because at this point the test run procedure is not yet changed.</p>
 
 <!-- LINKS DEFINITION -->
 
@@ -2142,6 +2159,8 @@
   <li><a href="http://magento.com/legal/terms/privacy/">Privacy Policy</a></li>
   <li><a href="http://magento.com/legal/terms/">Terms of Service</a></li>
   <li><a href="http://magento.com/legal/licensing/">License/Trademark FAQ</a></li>
+  <!-- If the page is in the root, the link points to the default version of release notes.
+       The default version is set in the config.yaml.-->
   <li><a href="/guides/v2.3/release-notes/bk-release-notes.html">Release Notes</a></li>
   <li><a href="/magento-third-party.html">Third-Party Licenses</a></li>
 </ul>

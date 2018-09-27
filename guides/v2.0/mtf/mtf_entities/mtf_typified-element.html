@@ -149,6 +149,25 @@
   
   
   <li>
+    <a href="/guides/v2.0/cloud/setup/first-time-setup.html">Local Development</a>
+  </li>
+
+
+
+          
+        
+          
+          
+            
+
+
+
+
+
+  
+  
+  
+  <li>
     <a href="/guides/v2.0/cloud/env/environments.html">Configure Environments</a>
   </li>
 
@@ -336,7 +355,7 @@
   
   
   <li>
-    <a href="/magento-release-information.html">Release Information</a>
+    <a href="/guides/v2.0/release-notes/bk-release-notes.html">Release Information</a>
   </li>
 
 
@@ -1889,7 +1908,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.0/mtf/mtf_changelog.html">Changelog</a>
+    <a href="https://github.com/magento/mtf/blob/develop/CHANGELOG.md">Changelog</a>
   
 
   
@@ -2101,7 +2120,7 @@
 
 <p>It must be named according to the following naming convention. Two capital letters in the name: the first letter and a capital <code class="highlighter-rouge">E</code> in the <code class="highlighter-rouge">Element.php</code>. For example: <code class="highlighter-rouge">OptgroupselectElement.php</code>.</p>
 
-<figure class="highlight"><pre><code class="language-php" data-lang="php"> 
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 
  <span class="cp">&lt;?php</span>
 
  <span class="k">namespace</span> <span class="nx">Magento\Mtf\Client\Element</span><span class="p">;</span>
@@ -2112,7 +2131,7 @@
  <span class="p">{</span>
     <span class="c1">//
 </span> <span class="p">}</span>
-  </code></pre></figure>
+</code></pre></div></div>
 
 <p><strong>Step 2.</strong> Extend your class from the <a href="#basic_class">default element</a> or the <a href="#magento_class">Magento custom element</a> class</p>
 
@@ -2188,7 +2207,7 @@ Use a <code class="highlighter-rouge">find()</code> method to find an element. T
 
 <p>The following code is a corresponding mapping with the typified element <code class="highlighter-rouge">optgroupselect</code> from the previous image:</p>
 
-<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;mapping</span> <span class="na">strict=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;mapping</span> <span class="na">strict=</span><span class="s">"0"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;wrapper&gt;</span>store<span class="nt">&lt;/wrapper&gt;</span>
     <span class="nt">&lt;fields&gt;</span>
         <span class="nt">&lt;group_id&gt;</span>
@@ -2200,7 +2219,8 @@ Use a <code class="highlighter-rouge">find()</code> method to find an element. T
             <span class="nt">&lt;input&gt;</span>select<span class="nt">&lt;/input&gt;</span>
         <span class="nt">&lt;/is_active&gt;</span>
     <span class="nt">&lt;/fields&gt;</span>
-<span class="nt">&lt;/mapping&gt;</span></code></pre></figure>
+<span class="nt">&lt;/mapping&gt;</span>
+</code></pre></div></div>
 
 <!-- PICTURE DEFINITIONS -->
 
@@ -2250,6 +2270,8 @@ Use a <code class="highlighter-rouge">find()</code> method to find an element. T
   <li><a href="http://magento.com/legal/terms/privacy/">Privacy Policy</a></li>
   <li><a href="http://magento.com/legal/terms/">Terms of Service</a></li>
   <li><a href="http://magento.com/legal/licensing/">License/Trademark FAQ</a></li>
+  <!-- If the page is in the root, the link points to the default version of release notes.
+       The default version is set in the config.yaml.-->
   <li><a href="/guides/v2.0/release-notes/bk-release-notes.html">Release Notes</a></li>
   <li><a href="/magento-third-party.html">Third-Party Licenses</a></li>
 </ul>

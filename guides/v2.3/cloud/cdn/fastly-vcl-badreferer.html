@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width initial-scale=1" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>Configure Docker | Magento 2 Developer Documentation</title>
+	<title>Custom block bad referer VCL | Magento 2 Developer Documentation</title>
 	<meta name="description" content="Magento 2 Developer Documentation.
 ">
 
@@ -27,7 +27,7 @@
 
 
 
-	<link rel="canonical" href="https://devdocs.magento.com/guides/v2.3/cloud/reference/docker-config.html">
+	<link rel="canonical" href="https://devdocs.magento.com/guides/v2.3/cloud/cdn/fastly-vcl-badreferer.html">
 
 	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://magento.com/favicon.ico">
 	<link rel="apple-touch-icon" type="image/png" href="https://magento.com/apple-touch-icon.png">
@@ -67,13 +67,13 @@
 
 	<ul class="dropdown-menu dropdown-menu-left" aria-labelledby="version-switcher-button">
 		
-		<li><a class="dropdown-item" data-proofer-ignore href="/guides/v2.0/cloud/reference/docker-config.html">Magento 2.0</a></li>
+		<li><a class="dropdown-item" data-proofer-ignore href="/guides/v2.0/cloud/cdn/fastly-vcl-badreferer.html">Magento 2.0</a></li>
 		
-		<li><a class="dropdown-item" data-proofer-ignore href="/guides/v2.1/cloud/reference/docker-config.html">Magento 2.1</a></li>
+		<li><a class="dropdown-item" data-proofer-ignore href="/guides/v2.1/cloud/cdn/fastly-vcl-badreferer.html">Magento 2.1</a></li>
 		
-		<li><a class="dropdown-item" data-proofer-ignore href="/guides/v2.2/cloud/reference/docker-config.html">Magento 2.2</a></li>
+		<li><a class="dropdown-item" data-proofer-ignore href="/guides/v2.2/cloud/cdn/fastly-vcl-badreferer.html">Magento 2.2</a></li>
 		
-		<li><a class="dropdown-item" data-proofer-ignore href="/guides/v2.3/cloud/reference/docker-config.html">Magento 2.3 Beta</a></li>
+		<li><a class="dropdown-item" data-proofer-ignore href="/guides/v2.3/cloud/cdn/fastly-vcl-badreferer.html">Magento 2.3 Beta</a></li>
 		
   </ul>
 </div>
@@ -149,6 +149,25 @@
   
   
   <li>
+    <a href="/guides/v2.3/cloud/setup/first-time-setup.html">Local Development</a>
+  </li>
+
+
+
+          
+        
+          
+          
+            
+
+
+
+
+
+  
+  
+  
+  <li>
     <a href="/guides/v2.3/cloud/env/environments.html">Configure Environments</a>
   </li>
 
@@ -187,7 +206,7 @@
   
   
   <li>
-    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">ece-tools Release Notes</a>
+    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">Release Notes</a>
   </li>
 
 
@@ -356,7 +375,7 @@
   
   
   <li>
-    <a href="/magento-release-information.html">Release Information</a>
+    <a href="/guides/v2.3/release-notes/bk-release-notes.html">Release Information</a>
   </li>
 
 
@@ -1714,7 +1733,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.3/cloud/setup/first-time-setup.html">Local environment setup</a>
+    <a href="/guides/v2.3/cloud/setup/first-time-setup.html">Local development setup</a>
   
 
   
@@ -1734,7 +1753,27 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.3/cloud/before/before-workspace.html">Prepare for local environment setup</a>
+    <a href="/guides/v2.3/cloud/docker/docker-development.html">Docker development</a>
+  
+
+  
+    <ul>
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.3/cloud/docker/docker-config.html">Launch Docker</a>
   
 
   
@@ -1742,6 +1781,33 @@
 
 
 
+      
+    </ul>
+  
+</li>
+
+
+
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.3/cloud/before/before-workspace.html">Prepare for manual setup</a>
+  
+
+  
+    <ul>
       
          
 
@@ -1881,6 +1947,13 @@
 
 
       
+    </ul>
+  
+</li>
+
+
+
+      
          
 
 
@@ -1919,29 +1992,6 @@
 <li class=" ">
   
     <a href="/guides/v2.3/cloud/howtos/debug.html">Optional - Configure Xdebug</a>
-  
-
-  
-</li>
-
-
-
-      
-         
-
-
-
-
-
-  
-  
-  
-
-  
-  
-<li class="active ">
-  
-    <a href="/guides/v2.3/cloud/reference/docker-config.html">Configure Docker</a>
   
 
   
@@ -2397,7 +2447,7 @@
 
   
   
-<li class=" ">
+<li class="active ">
   
     <a href="/guides/v2.3/cloud/cdn/fastly-vcl-badreferer.html">Custom block bad referer VCL</a>
   
@@ -3855,7 +3905,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">ece-tools release notes</a>
+    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">Release notes for ece-tools</a>
   
 
   
@@ -3990,199 +4040,70 @@
 
 	
 
-	<h1 class="page-heading">Configure Docker</h1>
+	<h1 class="page-heading">Custom block bad referer VCL</h1>
 
   
 
 
 </section>
 
-			<p>Magento Commerce Cloud provides a Docker environment option for those who use their local environment for development, test, or automation tasks. The Magento Commerce Cloud Docker environment requires three, essential components: a Magento 2 template, Docker Compose, and Magento Commerce Cloud <code class="highlighter-rouge">ece-tools</code> package.</p>
+			<p>You may want to create a VCL snippet that runs before all other modules to block bad referring websites from accessing your site. To block these sites with a 403 Forbidden error through Fastly, create a VCL snippet to use with an Edge Dictionary of domains to block.</p>
 
-<p>The <a href="https://github.com/magento/magento-cloud-docker" target="_blank">Magento Cloud Docker repository</a> contains build information for the following <a href="https://hub.docker.com/r/magento/" target="_blank">Docker hub</a> images:</p>
-
-<ul>
-  <li>PHP: magento/magento-cloud-docker-php
-    <ul>
-      <li>PHP-CLI - version 7 and later</li>
-      <li>PHP-FPM - version 7 and later</li>
-    </ul>
-  </li>
-  <li>NGINX: magento/magento-cloud-docker-nginx</li>
-  <li>Varnish: magento/magento-cloud-docker-varnish</li>
-</ul>
-
-<p>The <code class="highlighter-rouge">ece-tools</code> package provides a <code class="highlighter-rouge">docker:build</code> command to generate the Docker Compose configuration. Also, you can specify a version using one of the following options:</p>
+<p>You must have the following information to complete this VCL code snippet:</p>
 
 <ul>
-  <li>PHP: <code class="highlighter-rouge">--php</code></li>
-  <li>NGINX: <code class="highlighter-rouge">--nginx</code></li>
-  <li>MariaDB: <code class="highlighter-rouge">--db</code></li>
+  <li>Create an Edge Dictionary in your environments</li>
+  <li>Account access and URL to the Magento Admin for the Staging or Production environment</li>
 </ul>
 
-<h2 id="launch-docker-configuration">Launch Docker configuration</h2>
+<p class="bs-callout bs-callout-info">This information is just the code portion for setting up your VCL. Use this information with <a href="/guides/v2.3/cloud/cdn/cloud-vcl-custom-snippets.html">Custom Fastly VCL snippets</a>.</p>
 
-<p>You can use the <code class="highlighter-rouge">ece-tools</code> package to generate the Docker compose configuration and deploy Magento Commerce Cloud in a Docker container.</p>
+<h2 id="edge-dictionary">Create an Edge Dictionary</h2>
 
-<ul>
-  <li>
-    <p>If you use <code class="highlighter-rouge">ece tools</code> v2002.0.13 or later, Magento Commerce Cloud deploys to a read-only file system in the Docker container, which mirrors the read-only file system deployed in the Production environment. This version also provides a ` docker:config:convert` command to convert PHP configuration files to Docker ENV files.</p>
-  </li>
-  <li>
-    <p>If you use <code class="highlighter-rouge">ece-tools</code> v2002.0.12, Magento Commerce Cloud deploys to a writeable file system in the Docker container. This version does not support the <code class="highlighter-rouge">docker:config:convert</code> command.</p>
-  </li>
-</ul>
-
-<h4 id="to-launch-docker-with-ece-tools-v2002013-and-later">To launch Docker with <code class="highlighter-rouge">ece-tools</code> v2002.0.13 and later:</h4>
+<p>Edge Dictionaries create key-value pairs for running against your VCL snippet. For example, you may want to build a dictionary of URLs to redirect to a Wordpress backend. You may only want to create the edge dictionary in your Production environment. You can also create it in Staging for testing if needed.</p>
 
 <ol>
-  <li>
-    <p>Download a template from the <a href="https://github.com/magento/magento-cloud" target="_blank">Magento Cloud repository</a>.</p>
-  </li>
-  <li>
-    <p>Add your credentials to the <code class="highlighter-rouge">auth.json</code> file.</p>
-  </li>
-  <li>
-    <p>Install the template dependencies.</p>
-
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer install
-</code></pre></div>    </div>
-
-    <p class="bs-callout bs-callout-info">You can use the <code class="highlighter-rouge">--ignore-platform-reqs</code> option to bypass restrictions related to the PHP version.</p>
-  </li>
-  <li>
-    <p>In your local environment, start the Docker configuration generator.</p>
-
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vendor/bin/ece-tools docker:build
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Copy the raw configuration files.</p>
-
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cp docker/config.php.dist docker/config.php
-</code></pre></div>    </div>
-
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cp docker/global.php.dist docker/global.php
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Convert the PHP configuration files to Docker ENV files.</p>
-
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> vendor/bin/ece-tools docker:config:convert
-</code></pre></div>    </div>
-    <p>This command generate the following Docker ENV files:</p>
-
-    <ul>
-      <li><code class="highlighter-rouge">docker/config.env</code></li>
-      <li><code class="highlighter-rouge">docker/global.env</code></li>
-    </ul>
-  </li>
-  <li>
-    <p>Build files to containers and run in the background.</p>
-
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose up <span class="nt">-d</span> <span class="nt">--build</span>
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Install Magento in your Docker environment.</p>
-
-    <ul>
-      <li>
-        <p>Build Magento in the Docker container:</p>
-
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  docker-compose run build cloud-build
-</code></pre></div>        </div>
-      </li>
-      <li>
-        <p>Deploy Magento in the Docker container:</p>
-
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  docker-compose run deploy cloud-deploy
-</code></pre></div>        </div>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>Access your local Magento Cloud template by opening one of the following secure URLs in a browser:</p>
-
-    <ul>
-      <li>
-        <p><a href="http://localhost:8080" target="_blank"><code class="highlighter-rouge">http://localhost:8080</code></a></p>
-      </li>
-      <li>
-        <p><a href="https://localhost" target="_blank"><code class="highlighter-rouge">https://localhost</code></a></p>
-      </li>
-    </ul>
-  </li>
+  <li>Log in to the Magento Admin.</li>
+  <li>Navigate to <strong>Stores</strong> &gt; <strong>Configuration</strong> &gt; <strong>Advanced</strong> &gt; <strong>System</strong> &gt; <strong>Fastly Configuration</strong>.</li>
+  <li>Expand the <strong>Edge dictionaries</strong> section.</li>
+  <li>Click <strong>Add container</strong>. You need to create a container to hold up to 1,000 key-value pairs.</li>
+  <li>On the container, enter a Dictionary name. For this example, use the name <code class="highlighter-rouge">referer_blocklist</code>.</li>
+  <li>Select the checkbox for <strong>Activate after the change</strong> if you want to the dictionary after creating or editing the container.</li>
+  <li>Add key-value pairs in the new dictionary. For this example, enter the URLs for your blog that should be redirected to your Wordpress backend. Enter a value of 1.</li>
 </ol>
 
-<h4 id="to-launch-docker-with-ece-tools-v2002012">To launch Docker with <code class="highlighter-rouge">ece-tools</code> v2002.0.12:</h4>
+<p>For more information on using Edge Dictionaries with your VCL snippets, see Fastly’s <a href="https://docs.fastly.com/guides/edge-dictionaries/creating-and-using-dictionaries">Creating and using Edge Dictionaries</a> and their example <a href="https://docs.fastly.com/guides/edge-dictionaries/creating-and-using-dictionaries#custom-vcl-examples">custom VCL snippets</a>.</p>
 
-<ol>
-  <li>
-    <p>Download a template from the <a href="https://github.com/magento/magento-cloud" target="_blank">Magento Cloud repository</a>.</p>
-  </li>
-  <li>
-    <p>Add your credentials to <code class="highlighter-rouge">auth.json</code> file.</p>
-  </li>
-  <li>
-    <p>Install the template dependencies.</p>
+<h2 id="vcl">Create badreferer.json</h2>
 
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer install
-</code></pre></div>    </div>
+<p>For this example, you may only want to run it against the Production server. You can also add it to Staging for testing.</p>
 
-    <p class="bs-callout bs-callout-info">You can use the <code class="highlighter-rouge">--ignore-platform-reqs</code> option to bypass restrictions related to the PHP version.</p>
-  </li>
-  <li>
-    <p>In your local environment, start the Docker configuration generator.</p>
+<p>Create an <code class="highlighter-rouge">badreferer.json</code> file with the following JSON content:</p>
 
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vendor/bin/ece-tools docker:build
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Copy the configuration files.</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"badreferer"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"dynamic"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"recv"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"priority"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"set req.http.Referer-Host = regsub(req.http.Referer, </span><span class="se">\"</span><span class="s2">^https?://?([^:/</span><span class="se">\\</span><span class="s2">s]+).*$</span><span class="se">\"</span><span class="s2">, </span><span class="se">\"\\</span><span class="s2">1</span><span class="se">\"</span><span class="s2">); if (table.lookup(referer_blocklist, req.http.Referer-Host)) { error 403 </span><span class="se">\"</span><span class="s2">Forbidden</span><span class="se">\"</span><span class="s2">; }"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
 
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cp docker/config.env.dist docker/config.env
-</code></pre></div>    </div>
-
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cp docker/global.env.dist docker/global.env
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Build files to containers and run in the background.</p>
-
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose up <span class="nt">-d</span> <span class="nt">--build</span>
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Install Magento. This step may take some time to complete.</p>
-
-    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose run cli magento-installer
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Access your local Magento Cloud template by opening the following URL in a browser:</p>
-
-    <p><a href="http://localhost:8080" target="_blank"><code class="highlighter-rouge">http://localhost:8080</code></a></p>
-  </li>
-</ol>
-
-<h2 id="stop-and-remove-the-docker-configuration">Stop and remove the Docker configuration</h2>
-
-<p>Remove all components of your local Magento Cloud Docker instance including containers, networks, volumes, and images.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose down
-</code></pre></div></div>
-
-<h2 id="automate-integration-testing">Automate integration testing</h2>
-
-<p>Installing Magento Commerce Cloud in a dedicated Docker environment presents an opportunity for you to customize the following features and capabilities to implement automated integration testing:</p>
+<p>Review the following values for the code to determine if you need to make changes:</p>
 
 <ul>
-  <li>2-layer configuration for Docker build and Travis CI</li>
-  <li>Customizable Docker Compose file to support a wide range of environment sets</li>
-  <li>Flexible permissions</li>
-  <li>Easy local setup and implementation</li>
+  <li><code class="highlighter-rouge">name</code>: Name for the VCL snippet. For this example, we used the name <code class="highlighter-rouge">badreferer</code>.</li>
+  <li><code class="highlighter-rouge">priority</code>: Determines the order VCL snippets call. You want to set the priority to 5 to immediately run and block bad referring websites. This priority runs the snippet immediately and before any of the uploaded and default Magento VCL snippets (magentomodule) that have a priority of 50.</li>
+  <li><code class="highlighter-rouge">type</code>: For this VCL, we use <code class="highlighter-rouge">recv</code>, which places it in the vcl_recv subroutine by below the boilerplate VCL and above any objects.</li>
+  <li><code class="highlighter-rouge">content</code>: The code that runs. The code captures the host of a referer website into a header. It then checks if the referrer host is in the Edge Dictionary <code class="highlighter-rouge">referer_blocklist</code>.</li>
 </ul>
+
+<p class="bs-callout bs-callout-info">The default VCL snippets you uploaded included a prepended name of <code class="highlighter-rouge">magentomodule_</code> with a priority of 50. For your custom VCL snippets, <strong>do not use the <code class="highlighter-rouge">magentomodule_</code> name</strong>. Also consider the priority of your custom snippets if they should override the default snippets.</p>
+
+<h2 id="complete">Finish adding the VCL</h2>
+
+<p>When saved, continue creating other VCLs. You can then run the bash script, then validate and activate your VCLs to complete the process. For complete steps, see <a href="/guides/v2.3/cloud/cdn/cloud-vcl-custom-snippets.html">Custom Fastly VCL snippets</a>.</p>
+
 
 			
 		</div>
@@ -4196,13 +4117,13 @@
   
 
     <div class="github-link">
-      <a class="improve-page" href="https://github.com/magento/devdocs/blob/master/guides/v2.3/cloud/reference/docker-config.md" target="_blank">
+      <a class="improve-page" href="https://github.com/magento/devdocs/blob/master/guides/v2.3/cloud/cdn/fastly-vcl-badreferer.md" target="_blank">
         Edit this page on GitHub
       </a>
     </div>
 
     <div class="new-issue">
-      <a href="https://github.com/magento/devdocs/issues/new?title=Feedback on page: /guides/v2.3/cloud/reference/docker-config.html" target="_blank">
+      <a href="https://github.com/magento/devdocs/issues/new?title=Feedback on page: /guides/v2.3/cloud/cdn/fastly-vcl-badreferer.html" target="_blank">
         Give us feedback
       </a>
     </div>
@@ -4234,6 +4155,8 @@
   <li><a href="http://magento.com/legal/terms/privacy/">Privacy Policy</a></li>
   <li><a href="http://magento.com/legal/terms/">Terms of Service</a></li>
   <li><a href="http://magento.com/legal/licensing/">License/Trademark FAQ</a></li>
+  <!-- If the page is in the root, the link points to the default version of release notes.
+       The default version is set in the config.yaml.-->
   <li><a href="/guides/v2.3/release-notes/bk-release-notes.html">Release Notes</a></li>
   <li><a href="/magento-third-party.html">Third-Party Licenses</a></li>
 </ul>

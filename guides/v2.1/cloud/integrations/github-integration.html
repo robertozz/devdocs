@@ -149,6 +149,25 @@
   
   
   <li>
+    <a href="/guides/v2.1/cloud/setup/first-time-setup.html">Local Development</a>
+  </li>
+
+
+
+          
+        
+          
+          
+            
+
+
+
+
+
+  
+  
+  
+  <li>
     <a href="/guides/v2.1/cloud/env/environments.html">Configure Environments</a>
   </li>
 
@@ -187,7 +206,7 @@
   
   
   <li>
-    <a href="/guides/v2.1/cloud/release-notes/cloud-tools.html">ece-tools Release Notes</a>
+    <a href="/guides/v2.1/cloud/release-notes/cloud-tools.html">Release Notes</a>
   </li>
 
 
@@ -345,7 +364,7 @@
   
   
   <li>
-    <a href="/magento-release-information.html">Release Information</a>
+    <a href="/guides/v2.1/release-notes/bk-release-notes.html">Release Information</a>
   </li>
 
 
@@ -1660,7 +1679,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.1/cloud/setup/first-time-setup.html">Local environment setup</a>
+    <a href="/guides/v2.1/cloud/setup/first-time-setup.html">Local development setup</a>
   
 
   
@@ -1680,7 +1699,27 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.1/cloud/before/before-workspace.html">Prepare for local environment setup</a>
+    <a href="/guides/v2.1/cloud/docker/docker-development.html">Docker development</a>
+  
+
+  
+    <ul>
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.1/cloud/docker/docker-config.html">Launch Docker</a>
   
 
   
@@ -1688,6 +1727,33 @@
 
 
 
+      
+    </ul>
+  
+</li>
+
+
+
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.1/cloud/before/before-workspace.html">Prepare for manual setup</a>
+  
+
+  
+    <ul>
       
          
 
@@ -1827,6 +1893,13 @@
 
 
       
+    </ul>
+  
+</li>
+
+
+
+      
          
 
 
@@ -1865,29 +1938,6 @@
 <li class=" ">
   
     <a href="/guides/v2.1/cloud/howtos/debug.html">Optional - Configure Xdebug</a>
-  
-
-  
-</li>
-
-
-
-      
-         
-
-
-
-
-
-  
-  
-  
-
-  
-  
-<li class=" ">
-  
-    <a href="/guides/v2.1/cloud/reference/docker-config.html">Configure Docker</a>
   
 
   
@@ -3545,6 +3595,20 @@
 
 
 
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.1/cloud/trouble/reset-cron-jobs.html">Reset cron jobs</a>
+  
+
+  
+</li>
+
 
 
       
@@ -3773,7 +3837,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.1/cloud/release-notes/cloud-tools.html">ece-tools release notes</a>
+    <a href="/guides/v2.1/cloud/release-notes/cloud-tools.html">Release notes for ece-tools</a>
   
 
   
@@ -3917,7 +3981,7 @@
 
 			<p>The GitHub integration enables you to manage your Magento Commerce Cloud environments directly from your GitHub repository. The integration manages content already in GitHub and synchronizes it with Magento Commerce. Before you begin, your project and environments must be in a GitHub repository.</p>
 
-<p>We strongly recommend you use a <em>private</em> GitHub repository.</p>
+<p class="bs-callout bs-callout-info">We <em>strongly</em> recommend using a private repository for your Magento Commerce Cloud project to protect any proprietary information or development work, such as extensions and sensitive configurations.</p>
 
 <p>This integration enables you to:</p>
 
@@ -3931,7 +3995,7 @@
 
 <h2 id="generate-a-github-token">Generate a GitHub token</h2>
 
-<p>You must be a member of a group with write-access to the GitHub repository, so that you can <em>push</em> to the repository. See <a href="https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/" target="_blank">GitHub: Create</a>.</p>
+<p>You must be a member of a group with write-access to the GitHub repository, so that you can <em>push</em> to the repository. See <a href="https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/">GitHub: Create</a>.</p>
 
 <h2 id="enable-the-github-integration">Enable the GitHub integration</h2>
 
@@ -4139,6 +4203,8 @@ Payload URL: https://us.magento.cloud/api/projects/ov58dlacU2e/integrations/wO8a
   <li><a href="http://magento.com/legal/terms/privacy/">Privacy Policy</a></li>
   <li><a href="http://magento.com/legal/terms/">Terms of Service</a></li>
   <li><a href="http://magento.com/legal/licensing/">License/Trademark FAQ</a></li>
+  <!-- If the page is in the root, the link points to the default version of release notes.
+       The default version is set in the config.yaml.-->
   <li><a href="/guides/v2.1/release-notes/bk-release-notes.html">Release Notes</a></li>
   <li><a href="/magento-third-party.html">Third-Party Licenses</a></li>
 </ul>

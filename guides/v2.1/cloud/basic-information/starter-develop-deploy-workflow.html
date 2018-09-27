@@ -149,6 +149,25 @@
   
   
   <li>
+    <a href="/guides/v2.1/cloud/setup/first-time-setup.html">Local Development</a>
+  </li>
+
+
+
+          
+        
+          
+          
+            
+
+
+
+
+
+  
+  
+  
+  <li>
     <a href="/guides/v2.1/cloud/env/environments.html">Configure Environments</a>
   </li>
 
@@ -187,7 +206,7 @@
   
   
   <li>
-    <a href="/guides/v2.1/cloud/release-notes/cloud-tools.html">ece-tools Release Notes</a>
+    <a href="/guides/v2.1/cloud/release-notes/cloud-tools.html">Release Notes</a>
   </li>
 
 
@@ -345,7 +364,7 @@
   
   
   <li>
-    <a href="/magento-release-information.html">Release Information</a>
+    <a href="/guides/v2.1/release-notes/bk-release-notes.html">Release Information</a>
   </li>
 
 
@@ -1660,7 +1679,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.1/cloud/setup/first-time-setup.html">Local environment setup</a>
+    <a href="/guides/v2.1/cloud/setup/first-time-setup.html">Local development setup</a>
   
 
   
@@ -1680,7 +1699,27 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.1/cloud/before/before-workspace.html">Prepare for local environment setup</a>
+    <a href="/guides/v2.1/cloud/docker/docker-development.html">Docker development</a>
+  
+
+  
+    <ul>
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.1/cloud/docker/docker-config.html">Launch Docker</a>
   
 
   
@@ -1688,6 +1727,33 @@
 
 
 
+      
+    </ul>
+  
+</li>
+
+
+
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.1/cloud/before/before-workspace.html">Prepare for manual setup</a>
+  
+
+  
+    <ul>
       
          
 
@@ -1827,6 +1893,13 @@
 
 
       
+    </ul>
+  
+</li>
+
+
+
+      
          
 
 
@@ -1865,29 +1938,6 @@
 <li class=" ">
   
     <a href="/guides/v2.1/cloud/howtos/debug.html">Optional - Configure Xdebug</a>
-  
-
-  
-</li>
-
-
-
-      
-         
-
-
-
-
-
-  
-  
-  
-
-  
-  
-<li class=" ">
-  
-    <a href="/guides/v2.1/cloud/reference/docker-config.html">Configure Docker</a>
   
 
   
@@ -3545,6 +3595,20 @@
 
 
 
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.1/cloud/trouble/reset-cron-jobs.html">Reset cron jobs</a>
+  
+
+  
+</li>
+
 
 
       
@@ -3773,7 +3837,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.1/cloud/release-notes/cloud-tools.html">ece-tools release notes</a>
+    <a href="/guides/v2.1/cloud/release-notes/cloud-tools.html">Release notes for ece-tools</a>
   
 
   
@@ -3952,7 +4016,7 @@
   <li><a href="#prod-data">Pull production store data</a> down to environments</li>
 </ul>
 
-<p>This process assumes that you have set up your <a href="/guides/v2.1/cloud/access-acct/first-time-setup.html">local developer workspace</a>.</p>
+<p>This process assumes that you have set up your <a href="/guides/v2.1/cloud/setup/first-time-setup.html">local developer workspace</a>.</p>
 
 <h3 id="clone-branch">Clone and branch</h3>
 
@@ -3968,7 +4032,7 @@ git pull origin &lt;environment ID&gt;
 
 <p>Next, create branches from <code class="highlighter-rouge">staging</code> to develop code, add extensions, and configure 3rd party integrations. Anytime you need to develop custom code, add extensions, integrate with a 3rd party service, work in a development branch created from the <code class="highlighter-rouge">staging</code> branch. You will have four active Integration environments available. When you push an active branch, one of these Integration environments automatically deploys your code to test.</p>
 
-<p>We walk you through the process when you <a href="/guides/v2.1/cloud/access-acct/first-time-setup.html">set up your local</a> environment.</p>
+<p>We walk you through the process when you <a href="/guides/v2.1/cloud/setup/first-time-setup.html">set up your local</a> environment.</p>
 
 <p>The format of the Git branch command is:</p>
 
@@ -4012,9 +4076,9 @@ Configure your store settings from the Magento Admin panel for the Integration e
 
 <ul>
   <li><a href="/guides/v2.1/cloud/configure/configure-best-practices.html">Best practices for store configuration</a> for specific best practices in the cloud</li>
-  <li><a href="http://docs.magento.com/m2/ee/user_guide/configuration/configuration-basic.html" target="_blank">Basic configuration</a> for store admin access, name, languages, currencies, branding, sites, store views and more</li>
-  <li><a href="http://docs.magento.com/m2/ee/user_guide/design/design-theme.html" target="_blank">Theme</a> for your look and feel of the site and stores including CSS and layouts</li>
-  <li><a href="http://docs.magento.com/m2/ee/user_guide/system/system.html" target="_blank">System configuration</a> for roles, tools, notifications, and your encryption key for your database</li>
+  <li><a href="http://docs.magento.com/m2/ee/user_guide/configuration/configuration-basic.html">Basic configuration</a> for store admin access, name, languages, currencies, branding, sites, store views and more</li>
+  <li><a href="http://docs.magento.com/m2/ee/user_guide/design/design-theme.html">Theme</a> for your look and feel of the site and stores including CSS and layouts</li>
+  <li><a href="http://docs.magento.com/m2/ee/user_guide/system/system.html">System configuration</a> for roles, tools, notifications, and your encryption key for your database</li>
   <li>Extension settings using their documentation</li>
 </ul>
 
@@ -4095,7 +4159,7 @@ Configure your store settings from the Magento Admin panel for the Integration e
 
 <ul>
   <li><a href="/guides/v2.1/config-guide/cli/config-cli-subcommands-spt-util.html#config-cli-spt-utils-db">CLI commands</a> (Recommended) to export a protected backup of customer and store data using your Magento encryption key</li>
-  <li><a href="http://docs.magento.com/m2/ee/user_guide/system/support-data-collector.html" target="_blank">Data Collection</a> tool for generating and exporting data</li>
+  <li><a href="http://docs.magento.com/m2/ee/user_guide/system/support-data-collector.html">Data Collection</a> tool for generating and exporting data</li>
 </ul>
 
 <p>To migrate this data, see <a href="/guides/v2.1/cloud/live/stage-prod-migrate.html">Migrate and deploy static files and data</a>.</p>
@@ -4221,6 +4285,8 @@ Configure your store settings from the Magento Admin panel for the Integration e
   <li><a href="http://magento.com/legal/terms/privacy/">Privacy Policy</a></li>
   <li><a href="http://magento.com/legal/terms/">Terms of Service</a></li>
   <li><a href="http://magento.com/legal/licensing/">License/Trademark FAQ</a></li>
+  <!-- If the page is in the root, the link points to the default version of release notes.
+       The default version is set in the config.yaml.-->
   <li><a href="/guides/v2.1/release-notes/bk-release-notes.html">Release Notes</a></li>
   <li><a href="/magento-third-party.html">Third-Party Licenses</a></li>
 </ul>

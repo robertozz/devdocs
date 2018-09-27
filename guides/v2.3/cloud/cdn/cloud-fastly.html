@@ -149,6 +149,25 @@
   
   
   <li>
+    <a href="/guides/v2.3/cloud/setup/first-time-setup.html">Local Development</a>
+  </li>
+
+
+
+          
+        
+          
+          
+            
+
+
+
+
+
+  
+  
+  
+  <li>
     <a href="/guides/v2.3/cloud/env/environments.html">Configure Environments</a>
   </li>
 
@@ -187,7 +206,7 @@
   
   
   <li>
-    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">ece-tools Release Notes</a>
+    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">Release Notes</a>
   </li>
 
 
@@ -356,7 +375,7 @@
   
   
   <li>
-    <a href="/magento-release-information.html">Release Information</a>
+    <a href="/guides/v2.3/release-notes/bk-release-notes.html">Release Information</a>
   </li>
 
 
@@ -1714,7 +1733,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.3/cloud/setup/first-time-setup.html">Local environment setup</a>
+    <a href="/guides/v2.3/cloud/setup/first-time-setup.html">Local development setup</a>
   
 
   
@@ -1734,7 +1753,27 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.3/cloud/before/before-workspace.html">Prepare for local environment setup</a>
+    <a href="/guides/v2.3/cloud/docker/docker-development.html">Docker development</a>
+  
+
+  
+    <ul>
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.3/cloud/docker/docker-config.html">Launch Docker</a>
   
 
   
@@ -1742,6 +1781,33 @@
 
 
 
+      
+    </ul>
+  
+</li>
+
+
+
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.3/cloud/before/before-workspace.html">Prepare for manual setup</a>
+  
+
+  
+    <ul>
       
          
 
@@ -1881,6 +1947,13 @@
 
 
       
+    </ul>
+  
+</li>
+
+
+
+      
          
 
 
@@ -1919,29 +1992,6 @@
 <li class=" ">
   
     <a href="/guides/v2.3/cloud/howtos/debug.html">Optional - Configure Xdebug</a>
-  
-
-  
-</li>
-
-
-
-      
-         
-
-
-
-
-
-  
-  
-  
-
-  
-  
-<li class=" ">
-  
-    <a href="/guides/v2.3/cloud/reference/docker-config.html">Configure Docker</a>
   
 
   
@@ -3855,7 +3905,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">ece-tools release notes</a>
+    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">Release notes for ece-tools</a>
   
 
   
@@ -3998,8 +4048,8 @@
 </section>
 
 			<p>Fastly is a CDN based on Varnish caching, basically a cloud varnish service. When
-working with Fastly, you are also working directly with a heavily customized version of Varnish (2.1). <a href="https://docs.fastly.com/" target="_blank">Fastly</a>
-with <a href="https://varnish-cache.org/docs/" target="_blank">Varnish</a> caches your
+working with Fastly, you are also working directly with a heavily customized version of Varnish (2.1). <a href="https://docs.fastly.com/">Fastly</a>
+with <a href="https://varnish-cache.org/docs/">Varnish</a> caches your
 site pages, assets, CSS, and more in backend data centers you set up. As
 customers access your site and stores, the requests hit Fastly to load cached
 pages faster.</p>
@@ -4140,14 +4190,14 @@ instructions on creating <a href="/guides/v2.3/cloud/cdn/cloud-vcl-custom-snippe
 
 <p>Fastly supports forcing unencrypted requests to TLS through the Force TLS
 feature. Set up a secure base URL in Magento and turn on the Force TLS option
-in the Fastly extension. For details and instructions, see the Fastly <a href="https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/FORCE-TLS.md" target="_blank">Force TLS guide</a>.</p>
+in the Fastly extension. For details and instructions, see the Fastly <a href="https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/FORCE-TLS.md">Force TLS guide</a>.</p>
 
 <h2 id="geoip">GeoIP service support</h2>
 
 <p>Fastly provides a GeoIP service and supports some GeoIP functionality. GeoIP
 handling manages visitor redirection (automatically) and store matching
 (select from list) based on their obtained country code. For more information,
-see the Fastly <a href="https://github.com/fastly/fastly-magento2/blob/21b61c8189971275589219d418332798efc7db41/Documentation/CONFIGURATION.md#geoip-handling" target="_blank">GeoIP documentation</a>.</p>
+see the Fastly <a href="https://github.com/fastly/fastly-magento2/blob/21b61c8189971275589219d418332798efc7db41/Documentation/CONFIGURATION.md#geoip-handling">GeoIP documentation</a>.</p>
 
 <h2 id="image-optimization-support">Image Optimization support</h2>
 
@@ -4177,7 +4227,7 @@ settings or entering credentials.</li>
   <li>Test Fastly for caching</li>
 </ul>
 
-<p>For instructions, see <a href="/guides/v2.3/cloud/cdn/configure-fastly.html">Set up Fastly</a>.
+<p>For instructions, see <a href="/guides/v2.3/cloud/cdn/cloud-fastly.html">Set up Fastly</a>.
 After you have configured it, you can continue with advanced options including
 custom VCL snippets.</p>
 
@@ -4231,6 +4281,8 @@ custom VCL snippets.</p>
   <li><a href="http://magento.com/legal/terms/privacy/">Privacy Policy</a></li>
   <li><a href="http://magento.com/legal/terms/">Terms of Service</a></li>
   <li><a href="http://magento.com/legal/licensing/">License/Trademark FAQ</a></li>
+  <!-- If the page is in the root, the link points to the default version of release notes.
+       The default version is set in the config.yaml.-->
   <li><a href="/guides/v2.3/release-notes/bk-release-notes.html">Release Notes</a></li>
   <li><a href="/magento-third-party.html">Third-Party Licenses</a></li>
 </ul>

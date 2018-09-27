@@ -149,6 +149,25 @@
   
   
   <li>
+    <a href="/guides/v2.3/cloud/setup/first-time-setup.html">Local Development</a>
+  </li>
+
+
+
+          
+        
+          
+          
+            
+
+
+
+
+
+  
+  
+  
+  <li>
     <a href="/guides/v2.3/cloud/env/environments.html">Configure Environments</a>
   </li>
 
@@ -187,7 +206,7 @@
   
   
   <li>
-    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">ece-tools Release Notes</a>
+    <a href="/guides/v2.3/cloud/release-notes/cloud-tools.html">Release Notes</a>
   </li>
 
 
@@ -356,7 +375,7 @@
   
   
   <li>
-    <a href="/magento-release-information.html">Release Information</a>
+    <a href="/guides/v2.3/release-notes/bk-release-notes.html">Release Information</a>
   </li>
 
 
@@ -1995,7 +2014,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.3/mtf/mtf_changelog.html">Changelog</a>
+    <a href="https://github.com/magento/mtf/blob/develop/CHANGELOG.md">Changelog</a>
   
 
   
@@ -2235,95 +2254,95 @@
 
 <div class="collapsible">
     <b class="collapsible-title">Show/hide example </b>
-    <div class="collapsible-content"><div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="cp">&lt;?php</span>
- <span class="sd">/**
-  * Copyright © 2016 Magento. All rights reserved.
-  * See COPYING.txt for license details.
-  */</span>
- 
- <span class="k">namespace</span> <span class="nx">Magento\Customer\Test\TestStep</span><span class="p">;</span>
- 
- <span class="k">use</span> <span class="nx">Magento\Cms\Test\Page\CmsIndex</span><span class="p">;</span>
- <span class="k">use</span> <span class="nx">Magento\Customer\Test\Fixture\Customer</span><span class="p">;</span>
- <span class="k">use</span> <span class="nx">Magento\Customer\Test\Page\CustomerAccountLogin</span><span class="p">;</span>
- <span class="k">use</span> <span class="nx">Magento\Mtf\TestStep\TestStepInterface</span><span class="p">;</span>
- 
- <span class="sd">/**
-  * Login customer on frontend.
-  */</span>
- <span class="k">class</span> <span class="nc">LoginCustomerOnFrontendStep</span> <span class="k">implements</span> <span class="nx">TestStepInterface</span>
- <span class="p">{</span>
-     <span class="sd">/**
-      * Customer fixture.
-      *
-      * @var Customer
-      */</span>
-     <span class="k">protected</span> <span class="nv">$customer</span><span class="p">;</span>
- 
-     <span class="sd">/**
-      * Cms index page.
-      *
-      * @var CmsIndex
-      */</span>
-     <span class="k">protected</span> <span class="nv">$cmsIndex</span><span class="p">;</span>
- 
-     <span class="sd">/**
-      * Customer login page.
-      *
-      * @var CustomerAccountLogin
-      */</span>
-     <span class="k">protected</span> <span class="nv">$customerAccountLogin</span><span class="p">;</span>
- 
-     <span class="sd">/**
-      * Logout customer on frontend step.
-      *
-      * @var LogoutCustomerOnFrontendStep
-      */</span>
-     <span class="k">protected</span> <span class="nv">$logoutCustomerOnFrontend</span><span class="p">;</span>
- 
-     <span class="sd">/**
-      * @constructor
-      * @param CmsIndex $cmsIndex
-      * @param CustomerAccountLogin $customerAccountLogin
-      * @param LogoutCustomerOnFrontendStep $logoutCustomerOnFrontend
-      * @param Customer $customer
-      */</span>
-     <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span>
-         <span class="nx">CmsIndex</span> <span class="nv">$cmsIndex</span><span class="p">,</span>
-         <span class="nx">CustomerAccountLogin</span> <span class="nv">$customerAccountLogin</span><span class="p">,</span>
-         <span class="nx">LogoutCustomerOnFrontendStep</span> <span class="nv">$logoutCustomerOnFrontend</span><span class="p">,</span>
-         <span class="nx">Customer</span> <span class="nv">$customer</span>
-     <span class="p">)</span> <span class="p">{</span>
-         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">cmsIndex</span> <span class="o">=</span> <span class="nv">$cmsIndex</span><span class="p">;</span>
-         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">customerAccountLogin</span> <span class="o">=</span> <span class="nv">$customerAccountLogin</span><span class="p">;</span>
-         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">customer</span> <span class="o">=</span> <span class="nv">$customer</span><span class="p">;</span>
-         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">logoutCustomerOnFrontend</span> <span class="o">=</span> <span class="nv">$logoutCustomerOnFrontend</span><span class="p">;</span>
-     <span class="p">}</span>
- 
-     <span class="sd">/**
-      * Login customer.
-      *
-      * @return void
-      */</span>
-     <span class="k">public</span> <span class="k">function</span> <span class="nf">run</span><span class="p">()</span>
-     <span class="p">{</span>
-         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">logoutCustomerOnFrontend</span><span class="o">-&gt;</span><span class="na">run</span><span class="p">();</span>
-         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">cmsIndex</span><span class="o">-&gt;</span><span class="na">getLinksBlock</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">openLink</span><span class="p">(</span><span class="s1">'Sign In'</span><span class="p">);</span>
-         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">cmsIndex</span><span class="o">-&gt;</span><span class="na">getCmsPageBlock</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">waitPageInit</span><span class="p">();</span>
-         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">customerAccountLogin</span><span class="o">-&gt;</span><span class="na">getLoginBlock</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">login</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">customer</span><span class="p">);</span>
-         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">cmsIndex</span><span class="o">-&gt;</span><span class="na">getCmsPageBlock</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">waitPageInit</span><span class="p">();</span>
-     <span class="p">}</span>
- 
-     <span class="sd">/**
-      * Logout customer on fronted.
-      *
-      * @return void
-      */</span>
-     <span class="k">public</span> <span class="k">function</span> <span class="nf">cleanup</span><span class="p">()</span>
-     <span class="p">{</span>
-         <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">logoutCustomerOnFrontend</span><span class="o">-&gt;</span><span class="na">run</span><span class="p">();</span>
-     <span class="p">}</span>
- <span class="p">}</span>
+    <div class="collapsible-content"><div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="sd">/**
+* Copyright © 2016 Magento. All rights reserved.
+* See COPYING.txt for license details.
+*/</span>
+
+<span class="k">namespace</span> <span class="nx">Magento\Customer\Test\TestStep</span><span class="p">;</span>
+
+<span class="k">use</span> <span class="nx">Magento\Cms\Test\Page\CmsIndex</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Magento\Customer\Test\Fixture\Customer</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Magento\Customer\Test\Page\CustomerAccountLogin</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Magento\Mtf\TestStep\TestStepInterface</span><span class="p">;</span>
+
+<span class="sd">/**
+* Login customer on frontend.
+*/</span>
+<span class="k">class</span> <span class="nc">LoginCustomerOnFrontendStep</span> <span class="k">implements</span> <span class="nx">TestStepInterface</span>
+<span class="p">{</span>
+    <span class="sd">/**
+    * Customer fixture.
+    *
+    * @var Customer
+    */</span>
+    <span class="k">protected</span> <span class="nv">$customer</span><span class="p">;</span>
+
+    <span class="sd">/**
+    * Cms index page.
+    *
+    * @var CmsIndex
+    */</span>
+    <span class="k">protected</span> <span class="nv">$cmsIndex</span><span class="p">;</span>
+
+    <span class="sd">/**
+    * Customer login page.
+    *
+    * @var CustomerAccountLogin
+    */</span>
+    <span class="k">protected</span> <span class="nv">$customerAccountLogin</span><span class="p">;</span>
+
+    <span class="sd">/**
+    * Logout customer on frontend step.
+    *
+    * @var LogoutCustomerOnFrontendStep
+    */</span>
+    <span class="k">protected</span> <span class="nv">$logoutCustomerOnFrontend</span><span class="p">;</span>
+
+    <span class="sd">/**
+    * @constructor
+    * @param CmsIndex $cmsIndex
+    * @param CustomerAccountLogin $customerAccountLogin
+    * @param LogoutCustomerOnFrontendStep $logoutCustomerOnFrontend
+    * @param Customer $customer
+    */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span>
+        <span class="nx">CmsIndex</span> <span class="nv">$cmsIndex</span><span class="p">,</span>
+        <span class="nx">CustomerAccountLogin</span> <span class="nv">$customerAccountLogin</span><span class="p">,</span>
+        <span class="nx">LogoutCustomerOnFrontendStep</span> <span class="nv">$logoutCustomerOnFrontend</span><span class="p">,</span>
+        <span class="nx">Customer</span> <span class="nv">$customer</span>
+    <span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">cmsIndex</span> <span class="o">=</span> <span class="nv">$cmsIndex</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">customerAccountLogin</span> <span class="o">=</span> <span class="nv">$customerAccountLogin</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">customer</span> <span class="o">=</span> <span class="nv">$customer</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">logoutCustomerOnFrontend</span> <span class="o">=</span> <span class="nv">$logoutCustomerOnFrontend</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="sd">/**
+    * Login customer.
+    *
+    * @return void
+    */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">run</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">logoutCustomerOnFrontend</span><span class="o">-&gt;</span><span class="na">run</span><span class="p">();</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">cmsIndex</span><span class="o">-&gt;</span><span class="na">getLinksBlock</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">openLink</span><span class="p">(</span><span class="s1">'Sign In'</span><span class="p">);</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">cmsIndex</span><span class="o">-&gt;</span><span class="na">getCmsPageBlock</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">waitPageInit</span><span class="p">();</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">customerAccountLogin</span><span class="o">-&gt;</span><span class="na">getLoginBlock</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">login</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">customer</span><span class="p">);</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">cmsIndex</span><span class="o">-&gt;</span><span class="na">getCmsPageBlock</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">waitPageInit</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="sd">/**
+    * Logout customer on fronted.
+    *
+    * @return void
+    */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">cleanup</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">logoutCustomerOnFrontend</span><span class="o">-&gt;</span><span class="na">run</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div></div>
 </div>
   </div>
@@ -2418,6 +2437,8 @@
   <li><a href="http://magento.com/legal/terms/privacy/">Privacy Policy</a></li>
   <li><a href="http://magento.com/legal/terms/">Terms of Service</a></li>
   <li><a href="http://magento.com/legal/licensing/">License/Trademark FAQ</a></li>
+  <!-- If the page is in the root, the link points to the default version of release notes.
+       The default version is set in the config.yaml.-->
   <li><a href="/guides/v2.3/release-notes/bk-release-notes.html">Release Notes</a></li>
   <li><a href="/magento-third-party.html">Third-Party Licenses</a></li>
 </ul>

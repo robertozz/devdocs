@@ -149,6 +149,25 @@
   
   
   <li>
+    <a href="/guides/v2.0/cloud/setup/first-time-setup.html">Local Development</a>
+  </li>
+
+
+
+          
+        
+          
+          
+            
+
+
+
+
+
+  
+  
+  
+  <li>
     <a href="/guides/v2.0/cloud/env/environments.html">Configure Environments</a>
   </li>
 
@@ -336,7 +355,7 @@
   
   
   <li>
-    <a href="/magento-release-information.html">Release Information</a>
+    <a href="/guides/v2.0/release-notes/bk-release-notes.html">Release Information</a>
   </li>
 
 
@@ -1889,7 +1908,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.0/mtf/mtf_changelog.html">Changelog</a>
+    <a href="https://github.com/magento/mtf/blob/develop/CHANGELOG.md">Changelog</a>
   
 
   
@@ -1986,7 +2005,8 @@ Usage of docblock is a good practice for your new tests. See <a href="https://gi
   <li>saving of the edited product</li>
 </ul>
 
-<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cp">&lt;?php</span>
 <span class="sd">/**
  * Run update product simple entity test.
  *
@@ -2017,7 +2037,9 @@ Usage of docblock is a good practice for your new tests. See <a href="https://gi
     <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">editProductPage</span><span class="o">-&gt;</span><span class="na">getProductForm</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">fill</span><span class="p">(</span><span class="nv">$product</span><span class="p">);</span>
     <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">editProductPage</span><span class="o">-&gt;</span><span class="na">getFormPageActions</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">save</span><span class="p">();</span>
     <span class="k">return</span> <span class="p">[</span><span class="s1">'category'</span> <span class="o">=&gt;</span> <span class="nv">$category</span><span class="p">];</span>
-<span class="p">}</span></code></pre></figure>
+<span class="p">}</span>
+
+</code></pre></div></div>
 
 <p>A returned array is available in constraints within current variation.</p>
 
@@ -2109,6 +2131,8 @@ Usage of docblock is a good practice for your new tests. See <a href="https://gi
   <li><a href="http://magento.com/legal/terms/privacy/">Privacy Policy</a></li>
   <li><a href="http://magento.com/legal/terms/">Terms of Service</a></li>
   <li><a href="http://magento.com/legal/licensing/">License/Trademark FAQ</a></li>
+  <!-- If the page is in the root, the link points to the default version of release notes.
+       The default version is set in the config.yaml.-->
   <li><a href="/guides/v2.0/release-notes/bk-release-notes.html">Release Notes</a></li>
   <li><a href="/magento-third-party.html">Third-Party Licenses</a></li>
 </ul>

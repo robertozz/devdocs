@@ -149,6 +149,25 @@
   
   
   <li>
+    <a href="/guides/v2.2/cloud/setup/first-time-setup.html">Local Development</a>
+  </li>
+
+
+
+          
+        
+          
+          
+            
+
+
+
+
+
+  
+  
+  
+  <li>
     <a href="/guides/v2.2/cloud/env/environments.html">Configure Environments</a>
   </li>
 
@@ -187,7 +206,7 @@
   
   
   <li>
-    <a href="/guides/v2.2/cloud/release-notes/cloud-tools.html">ece-tools Release Notes</a>
+    <a href="/guides/v2.2/cloud/release-notes/cloud-tools.html">Release Notes</a>
   </li>
 
 
@@ -356,7 +375,7 @@
   
   
   <li>
-    <a href="/magento-release-information.html">Release Information</a>
+    <a href="/guides/v2.2/release-notes/bk-release-notes.html">Release Information</a>
   </li>
 
 
@@ -1696,7 +1715,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.2/cloud/setup/first-time-setup.html">Local environment setup</a>
+    <a href="/guides/v2.2/cloud/setup/first-time-setup.html">Local development setup</a>
   
 
   
@@ -1716,7 +1735,27 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.2/cloud/before/before-workspace.html">Prepare for local environment setup</a>
+    <a href="/guides/v2.2/cloud/docker/docker-development.html">Docker development</a>
+  
+
+  
+    <ul>
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.2/cloud/docker/docker-config.html">Launch Docker</a>
   
 
   
@@ -1724,6 +1763,33 @@
 
 
 
+      
+    </ul>
+  
+</li>
+
+
+
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.2/cloud/before/before-workspace.html">Prepare for manual setup</a>
+  
+
+  
+    <ul>
       
          
 
@@ -1863,6 +1929,13 @@
 
 
       
+    </ul>
+  
+</li>
+
+
+
+      
          
 
 
@@ -1901,29 +1974,6 @@
 <li class=" ">
   
     <a href="/guides/v2.2/cloud/howtos/debug.html">Optional - Configure Xdebug</a>
-  
-
-  
-</li>
-
-
-
-      
-         
-
-
-
-
-
-  
-  
-  
-
-  
-  
-<li class=" ">
-  
-    <a href="/guides/v2.2/cloud/reference/docker-config.html">Configure Docker</a>
   
 
   
@@ -3851,7 +3901,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.2/cloud/release-notes/cloud-tools.html">ece-tools release notes</a>
+    <a href="/guides/v2.2/cloud/release-notes/cloud-tools.html">Release notes for ece-tools</a>
   
 
   
@@ -3997,9 +4047,9 @@
 
 <p>For a new Starter project, the Magento encryption key is on your <code class="highlighter-rouge">master</code> branch Production environment. When you branch to other environments, the key travels with the code and database.</p>
 
-<p>For a new Pro project starting with a “blank site” Magento Commerce Cloud template, the Magento encryption key is on the Integration <code class="highlighter-rouge">master</code> branch and environment until you <a href="/guides/v2.2/cloud/access-acct/first-time-deploy.html">initially deploy</a> across all environments.</p>
+<p>For a new Pro project starting with a “blank site” Magento Commerce Cloud template, the Magento encryption key is on the Integration <code class="highlighter-rouge">master</code> branch and environment until you <a href="/guides/v2.2/cloud/setup/first-time-deploy.html">initially deploy</a> across all environments.</p>
 
-<p>If you have imported data from an existing Magento installation into Magento Commerce Cloud, you need to <a href="/guides/v2.2/cloud/access-acct/first-time-setup_import-prepare.html#encryption-key">copy the key</a> and <a href="/guides/v2.2/cloud/access-acct/first-time-setup_import-import.html#encryption-key">deploy it</a> to the environments.</p>
+<p>If you have imported data from an existing Magento installation into Magento Commerce Cloud, you need to <a href="/guides/v2.2/cloud/setup/first-time-setup-import-prepare.html#encryption-key">copy the key</a> and <a href="/guides/v2.2/cloud/setup/first-time-setup-import-import.html#encryption-key">deploy it</a> to the environments.</p>
 
 <h3 id="cloud-trouble-nocrypt">Encryption key not in all environments</h3>
 
@@ -4016,7 +4066,7 @@
   </li>
   <li>Open <code class="highlighter-rouge">app/etc/env.php</code> in a text editor.</li>
   <li>
-    <p>Verify the existing value of <code class="highlighter-rouge">key</code> for <code class="highlighter-rouge">crypt</code>. The value should be your <a href="/guides/v2.2/cloud/access-acct/first-time-setup_import-prepare.html#encryption-key">Magento Commerce key</a>.</p>
+    <p>Verify the existing value of <code class="highlighter-rouge">key</code> for <code class="highlighter-rouge">crypt</code>. The value should be your <a href="/guides/v2.2/cloud/setup/first-time-setup-import-prepare.html#encryption-key">Magento Commerce key</a>.</p>
 
     <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">return</span> <span class="k">array</span> <span class="p">(</span>
       <span class="s1">'crypt'</span> <span class="o">=&gt;</span>
@@ -4080,6 +4130,8 @@
   <li><a href="http://magento.com/legal/terms/privacy/">Privacy Policy</a></li>
   <li><a href="http://magento.com/legal/terms/">Terms of Service</a></li>
   <li><a href="http://magento.com/legal/licensing/">License/Trademark FAQ</a></li>
+  <!-- If the page is in the root, the link points to the default version of release notes.
+       The default version is set in the config.yaml.-->
   <li><a href="/guides/v2.2/release-notes/bk-release-notes.html">Release Notes</a></li>
   <li><a href="/magento-third-party.html">Third-Party Licenses</a></li>
 </ul>

@@ -149,6 +149,25 @@
   
   
   <li>
+    <a href="/guides/v2.0/cloud/setup/first-time-setup.html">Local Development</a>
+  </li>
+
+
+
+          
+        
+          
+          
+            
+
+
+
+
+
+  
+  
+  
+  <li>
     <a href="/guides/v2.0/cloud/env/environments.html">Configure Environments</a>
   </li>
 
@@ -336,7 +355,7 @@
   
   
   <li>
-    <a href="/magento-release-information.html">Release Information</a>
+    <a href="/guides/v2.0/release-notes/bk-release-notes.html">Release Information</a>
   </li>
 
 
@@ -1889,7 +1908,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.0/mtf/mtf_changelog.html">Changelog</a>
+    <a href="https://github.com/magento/mtf/blob/develop/CHANGELOG.md">Changelog</a>
   
 
   
@@ -1951,13 +1970,16 @@
 
 <p>To set up a parallel execution flow, add Magento instances to <code class="highlighter-rouge">&lt;magento2_root_dir&gt;/dev/tests/functional/phpunit.xml</code> in the following format:</p>
 
-<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;php&gt;</span>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;php&gt;</span>
     ...
     <span class="nt">&lt;env</span> <span class="na">name=</span><span class="s">"app_instances"</span> <span class="na">value=</span><span class="s">"&lt;quantity of the Magento instances&gt;"</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;env</span> <span class="na">name=</span><span class="s">"app_frontend_url_&lt;index number of the Magento instance&gt;"</span> <span class="na">value=</span><span class="s">"&lt;frontend URL of the Magento instance&gt;"</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;env</span> <span class="na">name=</span><span class="s">"app_backend_url_&lt;index number of Magento instance&gt;"</span> <span class="na">value=</span><span class="s">"&lt;backend URL of the Magento instance&gt;"</span> <span class="nt">/&gt;</span>
     ...
-<span class="nt">&lt;/php&gt;</span></code></pre></figure>
+<span class="nt">&lt;/php&gt;</span>
+
+</code></pre></div></div>
 
 <p class="bs-callout bs-callout-warning">The default elements <code class="highlighter-rouge">"app_frontend_url"</code> and <code class="highlighter-rouge">"app_backend_url"</code> must be added obligatory. Otherwise FTF returns an error. The default instances are ignored if <code class="highlighter-rouge">"app_instances"</code> element is present.</p>
 
@@ -1972,7 +1994,8 @@ Parallel execution flow with one Magento instance can cause conflict between tes
 
 <p>The following example shows a setup configuration of the flow with one Magento instance.</p>
 
-<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;php&gt;</span>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;php&gt;</span>
     ...
     <span class="nt">&lt;env</span> <span class="na">name=</span><span class="s">"app_frontend_url"</span> <span class="na">value=</span><span class="s">"http://example.com/magento2/index.php/"</span> <span class="nt">/&gt;</span>            // The default frontend instance. Ignored by the FTF.
     <span class="nt">&lt;env</span> <span class="na">name=</span><span class="s">"app_backend_url"</span> <span class="na">value=</span><span class="s">"http://example.com/magento2/index.php/backend/"</span> <span class="nt">/&gt;</span>     // The default backend instance. Ignored by the FTF.
@@ -1985,13 +2008,16 @@ Parallel execution flow with one Magento instance can cause conflict between tes
     <span class="nt">&lt;env</span> <span class="na">name=</span><span class="s">"app_backend_url_1"</span> <span class="na">value=</span><span class="s">"http://example.com/magento2/index.php/backend/"</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;env</span> <span class="na">name=</span><span class="s">"app_backend_url_2"</span> <span class="na">value=</span><span class="s">"http://example.com/magento2/index.php/backend/"</span> <span class="nt">/&gt;</span>
     ...
-<span class="nt">&lt;/php&gt;</span></code></pre></figure>
+<span class="nt">&lt;/php&gt;</span>
+
+</code></pre></div></div>
 
 <h3 id="parallel-execution-flow-with-multiple-magento-instances">Parallel execution flow with multiple Magento instances</h3>
 
 <p>The following example shows a setup configuration of the flow with three Magento instances.</p>
 
-<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;php&gt;</span>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;php&gt;</span>
     ...
     <span class="nt">&lt;env</span> <span class="na">name=</span><span class="s">"app_frontend_url"</span> <span class="na">value=</span><span class="s">"http://example.com/magento2/index.php/"</span> <span class="nt">/&gt;</span>            // The default frontend instance. Ignored by the FTF.
     <span class="nt">&lt;env</span> <span class="na">name=</span><span class="s">"app_backend_url"</span> <span class="na">value=</span><span class="s">"http://example.com/magento2/index.php/backend/"</span> <span class="nt">/&gt;</span>     // The default backend instance. Ignored by the FTF.
@@ -2004,7 +2030,9 @@ Parallel execution flow with one Magento instance can cause conflict between tes
     <span class="nt">&lt;env</span> <span class="na">name=</span><span class="s">"app_backend_url_1"</span> <span class="na">value=</span><span class="s">"http://example_2.com/magento2/index.php/backend/"</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;env</span> <span class="na">name=</span><span class="s">"app_backend_url_2"</span> <span class="na">value=</span><span class="s">"http://example_3.com/magento2/index.php/backend/"</span> <span class="nt">/&gt;</span>
     ...
-<span class="nt">&lt;/php&gt;</span></code></pre></figure>
+<span class="nt">&lt;/php&gt;</span>
+
+</code></pre></div></div>
 
 <h2 id="run-parallel-execution-flow">Run parallel execution flow</h2>
 
@@ -2012,8 +2040,9 @@ Parallel execution flow with one Magento instance can cause conflict between tes
 
 <p>Run a test suite:</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>phpunit &lt;magento2_root_dir&gt;/dev/tests/functional
-vendor/bin/phpunit testsuites/Magento/Mtf/TestSuite/InjectableTests.php</code></pre></figure>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>phpunit &lt;magento2_root_dir&gt;/dev/tests/functional
+vendor/bin/phpunit testsuites/Magento/Mtf/TestSuite/InjectableTests.php
+</code></pre></div></div>
 
 <!-- LINK DEFINITIONS -->
 
@@ -2054,6 +2083,8 @@ vendor/bin/phpunit testsuites/Magento/Mtf/TestSuite/InjectableTests.php</code></
   <li><a href="http://magento.com/legal/terms/privacy/">Privacy Policy</a></li>
   <li><a href="http://magento.com/legal/terms/">Terms of Service</a></li>
   <li><a href="http://magento.com/legal/licensing/">License/Trademark FAQ</a></li>
+  <!-- If the page is in the root, the link points to the default version of release notes.
+       The default version is set in the config.yaml.-->
   <li><a href="/guides/v2.0/release-notes/bk-release-notes.html">Release Notes</a></li>
   <li><a href="/magento-third-party.html">Third-Party Licenses</a></li>
 </ul>

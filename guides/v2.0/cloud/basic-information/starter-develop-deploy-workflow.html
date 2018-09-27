@@ -149,6 +149,25 @@
   
   
   <li>
+    <a href="/guides/v2.0/cloud/setup/first-time-setup.html">Local Development</a>
+  </li>
+
+
+
+          
+        
+          
+          
+            
+
+
+
+
+
+  
+  
+  
+  <li>
     <a href="/guides/v2.0/cloud/env/environments.html">Configure Environments</a>
   </li>
 
@@ -336,7 +355,7 @@
   
   
   <li>
-    <a href="/magento-release-information.html">Release Information</a>
+    <a href="/guides/v2.0/release-notes/bk-release-notes.html">Release Information</a>
   </li>
 
 
@@ -1126,8 +1145,6 @@
 
 
 
-
-
       
     </ul>
   
@@ -1511,8 +1528,6 @@
 
 
 
-
-
       
     </ul>
   
@@ -1522,8 +1537,6 @@
 
 		    
 		    	
-
-
 
 
 
@@ -1544,11 +1557,18 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.0/cloud/setup/first-time-setup.html">Local environment setup</a>
+    <a href="/guides/v2.0/cloud/setup/first-time-setup.html">Local development setup</a>
   
 
   
     <ul>
+      
+         
+
+
+
+
+
       
          
 
@@ -1564,14 +1584,11 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.0/cloud/before/before-workspace.html">Prepare for local environment setup</a>
+    <a href="/guides/v2.0/cloud/before/before-workspace.html">Prepare for manual setup</a>
   
 
   
-</li>
-
-
-
+    <ul>
       
          
 
@@ -1711,6 +1728,13 @@
 
 
       
+    </ul>
+  
+</li>
+
+
+
+      
          
 
 
@@ -1753,15 +1777,6 @@
 
   
 </li>
-
-
-
-      
-         
-
-
-
-
 
 
 
@@ -1890,8 +1905,6 @@
 
       
          
-
-
 
 
 
@@ -2059,8 +2072,6 @@
 
       
          
-
-
 
 
 
@@ -2261,8 +2272,6 @@
 
 
 
-
-
       
          
 
@@ -2313,8 +2322,6 @@
 
 
 
-
-
       
          
 
@@ -2331,8 +2338,6 @@
 
 
 
-
-
       
          
 
@@ -2340,12 +2345,8 @@
 
 
 
-
-
       
          
-
-
 
 
 
@@ -2545,8 +2546,6 @@
 
       
          
-
-
 
 
 
@@ -3189,8 +3188,6 @@
 
 
 
-
-
       
          
 
@@ -3262,8 +3259,6 @@
 
       
          
-
-
 
 
 
@@ -3345,8 +3340,6 @@
 
 
 
-
-
       
     </ul>
   
@@ -3381,8 +3374,6 @@
 
 
 
-
-
       
          
 
@@ -3390,12 +3381,8 @@
 
 
 
-
-
       
          
-
-
 
 
 
@@ -3566,7 +3553,7 @@
   <li><a href="#prod-data">Pull production store data</a> down to environments</li>
 </ul>
 
-<p>This process assumes you would have your <a href="/guides/v2.0/cloud/access-acct/first-time-setup.html">local developer workspace</a> set up. Feel free to read over this process even if your local isn’t ready.</p>
+<p>This process assumes you would have your <a href="/guides/v2.0/cloud/setup/first-time-setup.html">local developer workspace</a> set up. Feel free to read over this process even if your local isn’t ready.</p>
 
 <h3 id="clone-branch">Clone and branch</h3>
 
@@ -3582,7 +3569,7 @@ git pull origin &lt;environment ID&gt;
 
 <p>Next, create branches from <code class="highlighter-rouge">staging</code> to develop code, add extensions, and configure 3rd party integrations. Anytime you need to develop custom code, add extensions, integrate with a 3rd party service, work in a develop branch created from <code class="highlighter-rouge">staging</code>. You will have four active Integration environments available. When you push your an active branch of Git code, one of these Integration environments automatically deploys your code to test.</p>
 
-<p>We walk you through the process when you <a href="/guides/v2.0/cloud/access-acct/first-time-setup.html">set up your local</a>.</p>
+<p>We walk you through the process when you <a href="/guides/v2.0/cloud/setup/first-time-setup.html">set up your local</a>.</p>
 
 <p>The format of the Git branch command is:</p>
 
@@ -3706,7 +3693,7 @@ git pull origin &lt;environment ID&gt;
 
 <ul>
   <li><a href="/guides/v2.0/config-guide/cli/config-cli-subcommands-spt-util.html#config-cli-spt-utils-db">CLI commands</a> (Recommended) to export a protected backup of customer and store data using your Magento encryption key</li>
-  <li><a href="http://docs.magento.com/m2/ee/user_guide/system/support-data-collector.html" target="_blank">Data Collection</a> tool for generating and exporting data</li>
+  <li><a href="http://docs.magento.com/m2/ee/user_guide/system/support-data-collector.html">Data Collection</a> tool for generating and exporting data</li>
 </ul>
 
 <p>To migrate this data, see <a href="/guides/v2.0/cloud/live/stage-prod-migrate.html">Migrate and deploy static files and data</a>.</p>
@@ -3785,7 +3772,7 @@ git pull origin &lt;environment ID&gt;
 <h4 id="related-topics">Related topics</h4>
 
 <ul>
-  <li><a href="/guides/v2.0/cloud/access-acct/first-time-setup.html">First-time local environment setup</a></li>
+  <li><a href="/guides/v2.0/cloud/setup/first-time-setup.html">First-time local environment setup</a></li>
   <li><a href="/guides/v2.0/cloud/basic-information/starter-architecture.html">Starter architecture</a></li>
   <li><a href="/guides/v2.0/cloud/reference/discover-deploy.html">Deployment process</a></li>
 </ul>
@@ -3826,6 +3813,8 @@ git pull origin &lt;environment ID&gt;
   <li><a href="http://magento.com/legal/terms/privacy/">Privacy Policy</a></li>
   <li><a href="http://magento.com/legal/terms/">Terms of Service</a></li>
   <li><a href="http://magento.com/legal/licensing/">License/Trademark FAQ</a></li>
+  <!-- If the page is in the root, the link points to the default version of release notes.
+       The default version is set in the config.yaml.-->
   <li><a href="/guides/v2.0/release-notes/bk-release-notes.html">Release Notes</a></li>
   <li><a href="/magento-third-party.html">Third-Party Licenses</a></li>
 </ul>

@@ -149,6 +149,25 @@
   
   
   <li>
+    <a href="/guides/v2.1/cloud/setup/first-time-setup.html">Local Development</a>
+  </li>
+
+
+
+          
+        
+          
+          
+            
+
+
+
+
+
+  
+  
+  
+  <li>
     <a href="/guides/v2.1/cloud/env/environments.html">Configure Environments</a>
   </li>
 
@@ -187,7 +206,7 @@
   
   
   <li>
-    <a href="/guides/v2.1/cloud/release-notes/cloud-tools.html">ece-tools Release Notes</a>
+    <a href="/guides/v2.1/cloud/release-notes/cloud-tools.html">Release Notes</a>
   </li>
 
 
@@ -345,7 +364,7 @@
   
   
   <li>
-    <a href="/magento-release-information.html">Release Information</a>
+    <a href="/guides/v2.1/release-notes/bk-release-notes.html">Release Information</a>
   </li>
 
 
@@ -1660,7 +1679,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.1/cloud/setup/first-time-setup.html">Local environment setup</a>
+    <a href="/guides/v2.1/cloud/setup/first-time-setup.html">Local development setup</a>
   
 
   
@@ -1680,7 +1699,27 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.1/cloud/before/before-workspace.html">Prepare for local environment setup</a>
+    <a href="/guides/v2.1/cloud/docker/docker-development.html">Docker development</a>
+  
+
+  
+    <ul>
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.1/cloud/docker/docker-config.html">Launch Docker</a>
   
 
   
@@ -1688,6 +1727,33 @@
 
 
 
+      
+    </ul>
+  
+</li>
+
+
+
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.1/cloud/before/before-workspace.html">Prepare for manual setup</a>
+  
+
+  
+    <ul>
       
          
 
@@ -1827,6 +1893,13 @@
 
 
       
+    </ul>
+  
+</li>
+
+
+
+      
          
 
 
@@ -1865,29 +1938,6 @@
 <li class=" ">
   
     <a href="/guides/v2.1/cloud/howtos/debug.html">Optional - Configure Xdebug</a>
-  
-
-  
-</li>
-
-
-
-      
-         
-
-
-
-
-
-  
-  
-  
-
-  
-  
-<li class=" ">
-  
-    <a href="/guides/v2.1/cloud/reference/docker-config.html">Configure Docker</a>
   
 
   
@@ -3545,6 +3595,20 @@
 
 
 
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.1/cloud/trouble/reset-cron-jobs.html">Reset cron jobs</a>
+  
+
+  
+</li>
+
 
 
       
@@ -3773,7 +3837,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.1/cloud/release-notes/cloud-tools.html">ece-tools release notes</a>
+    <a href="/guides/v2.1/cloud/release-notes/cloud-tools.html">Release notes for ece-tools</a>
   
 
   
@@ -3947,21 +4011,21 @@
 
 <h2 id="security-scan">Set up Magento Security Scan Tool</h2>
 
-<p>The Magento Security Scan Tool enables you to regularly monitor your store websites and receive updates for known security risks, malware, and out of date software. This is a free service available for all implementations and versions of Magento Commerce Cloud. You access the tool through your <a href="https://account.magento.com/customer/account/login" target="_blank">Magento Marketplace account</a>.</p>
+<p>The Magento Security Scan Tool enables you to regularly monitor your store websites and receive updates for known security risks, malware, and out of date software. This is a free service available for all implementations and versions of Magento Commerce Cloud. You access the tool through your <a href="https://account.magento.com/customer/account/login">Magento Marketplace account</a>.</p>
 
 <ul>
   <li>Monitor your sites security status and applied security updates</li>
   <li>Receive security updates and site specific notifications</li>
 </ul>
 
-<p>For detailed instructions to set up and perform scans, see the <a href="http://docs.magento.com/m2/ee/user_guide/magento/security-scan.html" target="_blank">Magento User Guide</a>. Typically, you want to start using this tool as you enter UAT testing.</p>
+<p>For detailed instructions to set up and perform scans, see the <a href="http://docs.magento.com/m2/ee/user_guide/magento/security-scan.html">Magento User Guide</a>. Typically, you want to start using this tool as you enter UAT testing.</p>
 
 <p>Each site to be scanned must be registered through Magento Security Scan tab. This registration process includes acceptance of Magento’s disclaimer prior to scanning. You control both scan scheduling and the authorization of personnel to be notified when each scan is completed. Scans can be scheduled for either a specific, recurring date and time or on-demand as required.</p>
 
 <p>To scan your site:</p>
 
 <ol>
-  <li>Access your <a href="https://account.magento.com/customer/account/login" target="_blank">Magento Marketplace account</a>.</li>
+  <li>Access your <a href="https://account.magento.com/customer/account/login">Magento Marketplace account</a>.</li>
   <li>Click the Security Scan tab and select <strong>Go to Security Scan</strong>.</li>
   <li>In the <strong>Actions</strong> column for the site, select Run Scan. A notification status displays the scheduled scan.</li>
 </ol>
@@ -4036,6 +4100,8 @@
   <li><a href="http://magento.com/legal/terms/privacy/">Privacy Policy</a></li>
   <li><a href="http://magento.com/legal/terms/">Terms of Service</a></li>
   <li><a href="http://magento.com/legal/licensing/">License/Trademark FAQ</a></li>
+  <!-- If the page is in the root, the link points to the default version of release notes.
+       The default version is set in the config.yaml.-->
   <li><a href="/guides/v2.1/release-notes/bk-release-notes.html">Release Notes</a></li>
   <li><a href="/magento-third-party.html">Third-Party Licenses</a></li>
 </ul>

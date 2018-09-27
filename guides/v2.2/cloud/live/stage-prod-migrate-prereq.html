@@ -149,6 +149,25 @@
   
   
   <li>
+    <a href="/guides/v2.2/cloud/setup/first-time-setup.html">Local Development</a>
+  </li>
+
+
+
+          
+        
+          
+          
+            
+
+
+
+
+
+  
+  
+  
+  <li>
     <a href="/guides/v2.2/cloud/env/environments.html">Configure Environments</a>
   </li>
 
@@ -187,7 +206,7 @@
   
   
   <li>
-    <a href="/guides/v2.2/cloud/release-notes/cloud-tools.html">ece-tools Release Notes</a>
+    <a href="/guides/v2.2/cloud/release-notes/cloud-tools.html">Release Notes</a>
   </li>
 
 
@@ -356,7 +375,7 @@
   
   
   <li>
-    <a href="/magento-release-information.html">Release Information</a>
+    <a href="/guides/v2.2/release-notes/bk-release-notes.html">Release Information</a>
   </li>
 
 
@@ -1696,7 +1715,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.2/cloud/setup/first-time-setup.html">Local environment setup</a>
+    <a href="/guides/v2.2/cloud/setup/first-time-setup.html">Local development setup</a>
   
 
   
@@ -1716,7 +1735,27 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.2/cloud/before/before-workspace.html">Prepare for local environment setup</a>
+    <a href="/guides/v2.2/cloud/docker/docker-development.html">Docker development</a>
+  
+
+  
+    <ul>
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.2/cloud/docker/docker-config.html">Launch Docker</a>
   
 
   
@@ -1724,6 +1763,33 @@
 
 
 
+      
+    </ul>
+  
+</li>
+
+
+
+      
+         
+
+
+
+
+
+  
+  
+  
+
+  
+  
+<li class=" ">
+  
+    <a href="/guides/v2.2/cloud/before/before-workspace.html">Prepare for manual setup</a>
+  
+
+  
+    <ul>
       
          
 
@@ -1863,6 +1929,13 @@
 
 
       
+    </ul>
+  
+</li>
+
+
+
+      
          
 
 
@@ -1901,29 +1974,6 @@
 <li class=" ">
   
     <a href="/guides/v2.2/cloud/howtos/debug.html">Optional - Configure Xdebug</a>
-  
-
-  
-</li>
-
-
-
-      
-         
-
-
-
-
-
-  
-  
-  
-
-  
-  
-<li class=" ">
-  
-    <a href="/guides/v2.2/cloud/reference/docker-config.html">Configure Docker</a>
   
 
   
@@ -3851,7 +3901,7 @@
   
 <li class=" ">
   
-    <a href="/guides/v2.2/cloud/release-notes/cloud-tools.html">ece-tools release notes</a>
+    <a href="/guides/v2.2/cloud/release-notes/cloud-tools.html">Release notes for ece-tools</a>
   
 
   
@@ -4018,7 +4068,7 @@
 <p>You can locate your URLs through the Project Web Interface. For each selected environment or branch, you will find an Access Site link. Your environments begin with Master, which is Production, and any additional branches you create, including Staging (recommended) and development branches for custom code.</p>
 
 <ol>
-  <li>Log in to <a href="https://accounts.magento.cloud" target="_blank">your Magento Commerce Cloud account</a>.</li>
+  <li>Log in to <a href="https://accounts.magento.cloud">your Magento Commerce Cloud account</a>.</li>
   <li>Select an environment.</li>
   <li>
     <p>Click <strong>Access site</strong> to display the URL and SSH information.</p>
@@ -4043,7 +4093,7 @@
 
 <p>If your project was created before October 23, 2017, you also need to set up <a href="#pro-remote">remote Git repositories</a> on Staging and Production. Deployment targets are already set up on Staging and Production for projects created after October 23, 2017.</p>
 
-<p>If you haven’t done so already, upload any <a href="/guides/v2.2/cloud/access-acct/fastly.html#upload-vcl-snippets">Fastly VCL snippets</a> in your Integration environment <code class="highlighter-rouge">master</code> Magento Admin panel. Fastly is available in Staging and Production.</p>
+<p>If you haven’t done so already, upload any <a href="/guides/v2.2/cloud/cdn/configure-fastly.html#upload-vcl-snippets">Fastly VCL snippets</a> in your Integration environment <code class="highlighter-rouge">master</code> Magento Admin panel. Fastly is available in Staging and Production.</p>
 
 <h3 id="pro-yaml">Migrate your <code class="highlighter-rouge">.magento.app.yaml</code> file</h3>
 
@@ -4224,6 +4274,8 @@ git remote add prod git@git.ent.magento.cloud:dr5q6no7mhqip.git
   <li><a href="http://magento.com/legal/terms/privacy/">Privacy Policy</a></li>
   <li><a href="http://magento.com/legal/terms/">Terms of Service</a></li>
   <li><a href="http://magento.com/legal/licensing/">License/Trademark FAQ</a></li>
+  <!-- If the page is in the root, the link points to the default version of release notes.
+       The default version is set in the config.yaml.-->
   <li><a href="/guides/v2.2/release-notes/bk-release-notes.html">Release Notes</a></li>
   <li><a href="/magento-third-party.html">Third-Party Licenses</a></li>
 </ul>
