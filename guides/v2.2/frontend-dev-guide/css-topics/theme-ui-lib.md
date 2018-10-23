@@ -1,1 +1,1 @@
-../../../v2.1/frontend-dev-guide/css-topics/theme-ui-lib.md
+../../../v2.2/frontend-dev-guide/css-topics/theme-ui-lib.md
